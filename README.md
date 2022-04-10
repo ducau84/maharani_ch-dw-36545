@@ -5,6 +5,9 @@
 
 ## **Historial del Versiones**:
 
+### Versión 1.02 ( 10/04/2022 )
+- Unificación de la rama "animaciones_test" con la rama "main".
+
 ### Versión 1.01 ( 10/04/2022 )
 - Creación de la Rama "animaciones_test"
 - Introducción de animaciones y transiciones en menúes desplegables.

@@ -1,170 +1,202 @@
 <!DOCTYPE html>
 <html lang="es_ES">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
-        <title>Maharani Indumentaria</title>
-        <link rel="stylesheet" href="./css/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
-    </head>
-    
-    <body>
 
-        <header id="menu">
-            <nav class="navbar">
-                <div class="logo"><img src="./img/logo.png" alt="Logo"></div>
-                <ul class="nav-links">
-                    <input type="checkbox" id="checkbox_toggle" />
-                    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-                    <div class="menu">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="./pages/quienes.html">¿Quiénes Somos?</a></li>
-                        <li class="menu_galeria">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <title>Maharani Indumentaria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header id="menu">
+        <nav class="navbar">
+            <div class="logo" data-aos="zoom-in"><img src="./img/logo.png" alt="Logo"></div>
+            <ul class="nav-links">
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <div class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="./pages/quienes.html">¿Quiénes Somos?</a></li>
+                    <li class="menu_galeria">
                         <a href="#">Galería</a>
-                            <ul class="dropdown">
+                        <ul class="dropdown">
                             <li><a href="./pages/ind-futbol.html">Indumentaria de Fútbol</a></li>
                             <li><a href="./pages/ind-hockey.html">Indumentaira de Hockey</a></li>
                             <li><a href="./pages/ind-polo.html">Indumentaria de Polo</a></li>
                             <li><a href="./pages/tabla-talles.html">Tabla de Talles</a></li>
-                            </ul>
-                            </li>
-                        <li><a href="./pages/presupuesto.html">Presupuesto</a></li>
-                        <li><a href="./pages/contacto.html">Contacto</a></li>
-                    </div>
-                </ul>
-             </nav>
-        </header>
+                        </ul>
+                    </li>
+                    <li><a href="./pages/presupuesto.html">Presupuesto</a></li>
+                    <li><a href="./pages/contacto.html">Contacto</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
 
-        <main>
-            <section class="titulo">
-                <h1>Fábrica de Indumentaria Deportiva Personalizada</h1>
-            </section>
+    <main>
+        <section class="titulo">
+            <h1>Fábrica de Indumentaria Deportiva Personalizada</h1>
+        </section>
 
-            <section class='slider autoplay '>
-                <input name="anchor1" id='slide1_0' type="radio" class='anchor slide' >
-                <input name="anchor1" id='slide1_1' type="radio" class='anchor slide' >
-                <input name="anchor1" id='slide1_2' type="radio" class='anchor slide' >
-                <input name="anchor1" id='slide1_3' type="radio" class='anchor slide' >
-                <input name="anchor1" id='slide1_4' type="radio" class='anchor slide' >
-                <input name="anchor1" id='slide1_5' type="radio" class='anchor slide' >
-                <input name="anchor1" id='slide1_6' type="radio" class='anchor slide' >
-                <input name="anchor1" id='play1' type="radio" class='anchor' checked>
-                <input name="anchor1" id='pause1_0' type="radio" class='anchor pause'>
-                <input name="anchor1" id='pause1_1' type="radio" class='anchor pause'>
-                <input name="anchor1" id='pause1_2' type="radio" class='anchor pause'>
-                <input name="anchor1" id='pause1_3' type="radio" class='anchor pause'>
-                <input name="anchor1" id='pause1_4' type="radio" class='anchor pause'>
-                <input name="anchor1" id='pause1_5' type="radio" class='anchor pause'>
-                <input name="anchor1" id='pause1_6' type="radio" class='anchor pause'>
-                    <ul>
-                        <li class="skeleton"><img src="./img/fotos-home/fulbo1.jpg"></li>
-                        <li class='num0 img slide'> <img src="./img/fotos-home/fulbo1.jpg" alt="futbol 1" title="Indumentaria de Fútbol" /></li>
-                        <li class='num1 img slide'> <img src="./img/fotos-home/fulbo2.jpg" alt="futbol 2" title="TOTALMENTE PERSONALIZADA!" /></li>
-                        <li class='num2 img slide'> <img src="./img/fotos-home/hockey1.jpg" alt="hockey 1" title="Indumentaria de Hockey" /></li>
-                        <li class='num3 img slide'> <img src="./img/fotos-home/hockey2.jpg" alt="hockey 2" title="HACEMOS REALIDAD TUS IDEAS" /></li>
-                        <li class='num4 img slide'> <img src="./img/fotos-home/polo1.jpg" alt="polo 1" title="Indumentaria de Polo" /></li>
-                        <li class='num5 img slide'> <img src="./img/fotos-home/polo2.jpg" alt="polo 2" title="VOS ELEGIS EL DISEÑO!" /></li>
-                        <li class='num6 img slide'> <img src="img/fotos-home/multideportes.jpg" alt="otras disc" title="Consultanos por Indumentaria de Otras Disciplinas" /></li>
-                    </ul>
-                <div class='description'>
-                    <label class='num0'><span class="title"><span class="wrapper">Indumentaria de Fútbol</span></span></label>
-                    <label class='num1'><span class="title"><span class="wrapper">¡Totalmente Personalizada!</span></span></label>
-                    <label class='num2'><span class="title"><span class="wrapper">Indumentaria de Hockey</span></span></label>
-                    <label class='num3'><span class="title"><span class="wrapper">Hacemos Realidad tus Ideas</span></span></label>
-                    <label class='num4'><span class="title"><span class="wrapper">Indumentaria de Polo</span></span></label>
-                    <label class='num5'><span class="title"><span class="wrapper">¡Vos Elegis El Diseño!</span></span></label>
-                    <label class='num6'><span class="title"><span class="wrapper">Consulta por Indumentaria de Otras Disciplinas</span></span></label>
-                </div>
-                <div class='play_pause'>
-                    <label class='play' for='play1'><span><i></i><b></b></span></label>
-                    <label class='pause num0' for='pause1_0'><span><i></i><b></b></span></label>
-                    <label class='pause num1' for='pause1_1'><span><i></i><b></b></span></label>
-                    <label class='pause num2' for='pause1_2'><span><i></i><b></b></span></label>
-                    <label class='pause num3' for='pause1_3'><span><i></i><b></b></span></label>
-                    <label class='pause num4' for='pause1_4'><span><i></i><b></b></span></label>
-                    <label class='pause num5' for='pause1_5'><span><i></i><b></b></span></label>
-                    <label class='pause num6' for='pause1_6'><span><i></i><b></b></span></label>
-                </div>
-                <div class='arrowprev'>
-                    <label class='num0' for='slide1_0'><span><i></i><b></b></span></label>
-                    <label class='num1' for='slide1_1'><span><i></i><b></b></span></label>
-                    <label class='num2' for='slide1_2'><span><i></i><b></b></span></label>
-                    <label class='num3' for='slide1_3'><span><i></i><b></b></span></label>
-                    <label class='num4' for='slide1_4'><span><i></i><b></b></span></label>
-                    <label class='num5' for='slide1_5'><span><i></i><b></b></span></label>
-                    <label class='num6' for='slide1_6'><span><i></i><b></b></span></label>
-                </div>
-                <div class='arrownext'>
-                    <label class='num0' for='slide1_0'><span><i></i><b></b></span></label>
-                    <label class='num1' for='slide1_1'><span><i></i><b></b></span></label>
-                    <label class='num2' for='slide1_2'><span><i></i><b></b></span></label>
-                    <label class='num3' for='slide1_3'><span><i></i><b></b></span></label>
-                    <label class='num4' for='slide1_4'><span><i></i><b></b></span></label>
-                    <label class='num5' for='slide1_5'><span><i></i><b></b></span></label>
-                    <label class='num6' for='slide1_6'><span><i></i><b></b></span></label>
-                </div>
-                <div class='bullets'>
-                    <label class='num0' for='slide1_0'> <span class='point'></span></label>
-                    <label class='num1' for='slide1_1'> <span class='point'></span></label>
-                    <label class='num2' for='slide1_2'> <span class='point'></span></label>
-                    <label class='num3' for='slide1_3'> <span class='point'></span></label>
-                    <label class='num4' for='slide1_4'> <span class='point'></span></label>
-                    <label class='num5' for='slide1_5'> <span class='point'></span></label>
-                    <label class='num6' for='slide1_6'> <span class='point'></span></label>
-                </div>
-            </section>
+        <section class='slider autoplay '>
+            <input name="anchor1" id='slide1_0' type="radio" class='anchor slide'>
+            <input name="anchor1" id='slide1_1' type="radio" class='anchor slide'>
+            <input name="anchor1" id='slide1_2' type="radio" class='anchor slide'>
+            <input name="anchor1" id='slide1_3' type="radio" class='anchor slide'>
+            <input name="anchor1" id='slide1_4' type="radio" class='anchor slide'>
+            <input name="anchor1" id='slide1_5' type="radio" class='anchor slide'>
+            <input name="anchor1" id='slide1_6' type="radio" class='anchor slide'>
+            <input name="anchor1" id='play1' type="radio" class='anchor' checked>
+            <input name="anchor1" id='pause1_0' type="radio" class='anchor pause'>
+            <input name="anchor1" id='pause1_1' type="radio" class='anchor pause'>
+            <input name="anchor1" id='pause1_2' type="radio" class='anchor pause'>
+            <input name="anchor1" id='pause1_3' type="radio" class='anchor pause'>
+            <input name="anchor1" id='pause1_4' type="radio" class='anchor pause'>
+            <input name="anchor1" id='pause1_5' type="radio" class='anchor pause'>
+            <input name="anchor1" id='pause1_6' type="radio" class='anchor pause'>
+            <ul>
+                <li class="skeleton"><img src="./img/fotos-home/fulbo1.jpg"></li>
+                <li class='num0 img slide'> <img src="./img/fotos-home/fulbo1.jpg" alt="futbol 1"
+                        title="Indumentaria de Fútbol" /></li>
+                <li class='num1 img slide'> <img src="./img/fotos-home/fulbo2.jpg" alt="futbol 2"
+                        title="TOTALMENTE PERSONALIZADA!" /></li>
+                <li class='num2 img slide'> <img src="./img/fotos-home/hockey1.jpg" alt="hockey 1"
+                        title="Indumentaria de Hockey" /></li>
+                <li class='num3 img slide'> <img src="./img/fotos-home/hockey2.jpg" alt="hockey 2"
+                        title="HACEMOS REALIDAD TUS IDEAS" /></li>
+                <li class='num4 img slide'> <img src="./img/fotos-home/polo1.jpg" alt="polo 1"
+                        title="Indumentaria de Polo" /></li>
+                <li class='num5 img slide'> <img src="./img/fotos-home/polo2.jpg" alt="polo 2"
+                        title="VOS ELEGIS EL DISEÑO!" /></li>
+                <li class='num6 img slide'> <img src="img/fotos-home/multideportes.jpg" alt="otras disc"
+                        title="Consultanos por Indumentaria de Otras Disciplinas" /></li>
+            </ul>
+            <div class='description'>
+                <label class='num0'><span class="title"><span class="wrapper">Indumentaria de
+                            Fútbol</span></span></label>
+                <label class='num1'><span class="title"><span class="wrapper">¡Totalmente
+                            Personalizada!</span></span></label>
+                <label class='num2'><span class="title"><span class="wrapper">Indumentaria de
+                            Hockey</span></span></label>
+                <label class='num3'><span class="title"><span class="wrapper">Hacemos Realidad tus
+                            Ideas</span></span></label>
+                <label class='num4'><span class="title"><span class="wrapper">Indumentaria de Polo</span></span></label>
+                <label class='num5'><span class="title"><span class="wrapper">¡Vos Elegis El
+                            Diseño!</span></span></label>
+                <label class='num6'><span class="title"><span class="wrapper">Consulta por Indumentaria de Otras
+                            Disciplinas</span></span></label>
+            </div>
+            <div class='play_pause'>
+                <label class='play' for='play1'><span><i></i><b></b></span></label>
+                <label class='pause num0' for='pause1_0'><span><i></i><b></b></span></label>
+                <label class='pause num1' for='pause1_1'><span><i></i><b></b></span></label>
+                <label class='pause num2' for='pause1_2'><span><i></i><b></b></span></label>
+                <label class='pause num3' for='pause1_3'><span><i></i><b></b></span></label>
+                <label class='pause num4' for='pause1_4'><span><i></i><b></b></span></label>
+                <label class='pause num5' for='pause1_5'><span><i></i><b></b></span></label>
+                <label class='pause num6' for='pause1_6'><span><i></i><b></b></span></label>
+            </div>
+            <div class='arrowprev'>
+                <label class='num0' for='slide1_0'><span><i></i><b></b></span></label>
+                <label class='num1' for='slide1_1'><span><i></i><b></b></span></label>
+                <label class='num2' for='slide1_2'><span><i></i><b></b></span></label>
+                <label class='num3' for='slide1_3'><span><i></i><b></b></span></label>
+                <label class='num4' for='slide1_4'><span><i></i><b></b></span></label>
+                <label class='num5' for='slide1_5'><span><i></i><b></b></span></label>
+                <label class='num6' for='slide1_6'><span><i></i><b></b></span></label>
+            </div>
+            <div class='arrownext'>
+                <label class='num0' for='slide1_0'><span><i></i><b></b></span></label>
+                <label class='num1' for='slide1_1'><span><i></i><b></b></span></label>
+                <label class='num2' for='slide1_2'><span><i></i><b></b></span></label>
+                <label class='num3' for='slide1_3'><span><i></i><b></b></span></label>
+                <label class='num4' for='slide1_4'><span><i></i><b></b></span></label>
+                <label class='num5' for='slide1_5'><span><i></i><b></b></span></label>
+                <label class='num6' for='slide1_6'><span><i></i><b></b></span></label>
+            </div>
+            <div class='bullets'>
+                <label class='num0' for='slide1_0'> <span class='point'></span></label>
+                <label class='num1' for='slide1_1'> <span class='point'></span></label>
+                <label class='num2' for='slide1_2'> <span class='point'></span></label>
+                <label class='num3' for='slide1_3'> <span class='point'></span></label>
+                <label class='num4' for='slide1_4'> <span class='point'></span></label>
+                <label class='num5' for='slide1_5'> <span class='point'></span></label>
+                <label class='num6' for='slide1_6'> <span class='point'></span></label>
+            </div>
+        </section>
 
-            <section id="descripcion">
-                <div class="intro">
-                    <p>Elegí los colores y el diseño que más te gusten de nuestro catálogo, o proponenos el tuyo y lo armamos a tu gusto. Consultanos por Buzos de Egresados, Gorras personalizadas y mucho más.</p>
-                </div>
-            </section>
-            <section class="proceso">
-                <h2>PROCESO DE COMPRA</h2>
-                <hr>
-                <ul>
-                    <li>
-                        <h5>DISEÑO:</h5> <p>Lo elegís de nuestro catálogo o nosotros te ayudamos a crear el tuyo.</p>
-                    </li>
-                    <li>
-                        <h5>COTIZACIÓN:</h5> <p>Te enviamos el costo, plazo de entrega, condiciones y método de envío.</p>
-                    </li>
-                    <li>
-                        <h5>SEÑA:</h5> <p>Realizas el pago del 50% del total de lo cotizado.</p>
-                    </li>
-                    <li>
-                        <h5>PRODUCCIÓN:</h5> <p>¡Comienza la mejor etapa, tus ideas se hacen realidad!.</p>
-                    </li>
-                    <li>
-                        <h5>CONTROL DE CALIDAD</h5> <p>Revisamos que cada prenda cumpla con tus exigencias. </p>
-                    </li>
-                    <li>    
-                        <h5>PAGO FINAL:</h5> <p>Realizas el pago del 50% restante.</p>
-                    </li>
-                    <li>    
-                        <h5>ENVÍO DEL PEDIDO:</h5> <p>Te enviamos el pedido por el medio acordado</p>
-                    </li>
-                </ul>
-            </section>
-            <section class="containerTop">
+        <section id="descripcion">
+            <div class="intro">
+                <p>Elegí los colores y el diseño que más te gusten de nuestro catálogo, o proponenos el tuyo y lo
+                    armamos a tu gusto. Consultanos por Buzos de Egresados, Gorras personalizadas y mucho más.</p>
+            </div>
+        </section>
+        <section class="proceso">
+            <h2>PROCESO DE COMPRA</h2>
+            <hr>
+            <ul>
+                <li>
+                    <h5>DISEÑO:</h5>
+                    <p>Lo elegís de nuestro catálogo o nosotros te ayudamos a crear el tuyo.</p>
+                </li>
+                <li>
+                    <h5>COTIZACIÓN:</h5>
+                    <p>Te enviamos el costo, plazo de entrega, condiciones y método de envío.</p>
+                </li>
+                <li>
+                    <h5>SEÑA:</h5>
+                    <p>Realizas el pago del 50% del total de lo cotizado.</p>
+                </li>
+                <li>
+                    <h5>PRODUCCIÓN:</h5>
+                    <p>¡Comienza la mejor etapa, tus ideas se hacen realidad!.</p>
+                </li>
+                <li>
+                    <h5>CONTROL DE CALIDAD</h5>
+                    <p>Revisamos que cada prenda cumpla con tus exigencias. </p>
+                </li>
+                <li>
+                    <h5>PAGO FINAL:</h5>
+                    <p>Realizas el pago del 50% restante.</p>
+                </li>
+                <li>
+                    <h5>ENVÍO DEL PEDIDO:</h5>
+                    <p>Te enviamos el pedido por el medio acordado</p>
+                </li>
+            </ul>
+        </section>
+        <section class="containerTop">
             <a class="top" href="#top"> ↑ </a>
-            </section>
-        </main>
-        
-        <footer>
-            <div class="redes">
-                <a href="https://www.facebook.com/maharani.indumentaria" target="blank"><img id="facebook" src="./img/socialn/facebook.png" alt="facebook"></a>
-                <a href="https://www.instagram.com/maharani.indumentaria/" target="blank"><img id="instagram" src="./img/socialn/Instagram.png" alt="instagram"></a>
-                <a href="https://twitter.com/MaharaniIndume1" target="blank"><img id="twitter" src="./img/socialn/twitter.png" alt="twitter"></a>
-            </div>
-            <div>
-                <p class="copyRigth">Maharani Indumentaria &copy; 2022</p>
-            </div>
-        </footer>
+        </section>
+    </main>
 
-    </body>
+    <footer>
+        <div class="redes">
+            <a href="https://www.facebook.com/maharani.indumentaria" target="blank"><img id="facebook"
+                    src="./img/socialn/facebook.png" alt="facebook"></a>
+            <a href="https://www.instagram.com/maharani.indumentaria/" target="blank"><img id="instagram"
+                    src="./img/socialn/Instagram.png" alt="instagram"></a>
+            <a href="https://twitter.com/MaharaniIndume1" target="blank"><img id="twitter"
+                    src="./img/socialn/twitter.png" alt="twitter"></a>
+        </div>
+        <div>
+            <p class="copyRigth">Maharani Indumentaria &copy; 2022</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
+</body>
+
 </html>
