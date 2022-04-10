@@ -4,18 +4,19 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+        <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
         <title>Maharani Indumentaria</title>
-        <link rel="stylesheet" href="../css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/style.css">
     </head>
 
     <body>
         <header id="menu">
             <nav class="navbar">
-                <div class="logo"><img src="../img/logo.png" alt="Logo"></div>
+                <div class="logo" data-aos="zoom-in"><img src="../img/logo.png" alt="Logo"></div>
                 <ul class="nav-links">
                     <input type="checkbox" id="checkbox_toggle" />
                     <label for="checkbox_toggle" class="hamburger">&#9776;</label>
@@ -45,7 +46,8 @@
     
             <section class="galeria">
                 <h2>Galeria de Diseños</h2>
-                    <div class="container">
+                    <div class="container" data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom">
                         <div>
                             <img src="../img/fotos-polo/camiseta1.png" alt="camiseta 1"> 
                             <span>Camiseta Sublimada 1</span>
@@ -77,5 +79,11 @@
             <p class="copyRigth">Maharani Indumentaria &copy; 2022</p>
         </div>
     </footer>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 </html>
