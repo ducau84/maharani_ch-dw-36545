@@ -1552,6 +1552,11 @@ button {
   cursor: pointer;
 }
 
+button:hover {
+  animation: menu-resaltado 1000ms linear 3ms infinite;
+  border: rgb(0, 24, 92) 1px solid;
+}
+
 button p {
   color: #fff;
 }
