@@ -5,6 +5,11 @@
 
 ## **Historial del Versiones**:
 
+### Versión 1.12 ( 16/04/2022 )
+- Corrección de valores de overflow que no permitian el scroll vertical en vista "mobile apaisado" y "tablet".
+- Ajuste de tamaño de fuentes en footer para vistas "tablet" y "mobile apaisado".
+- Corrección de etiqueta de clase en botón "enviar" del formulario de contacto. 
+
 ### Versión 1.11 ( 15/04/2022 )
 - Ajuste de animaciones en transcision de páginas, efecto hover en imágenes del footer.
 - Ajuste de tamaño de los contendores de imágen de las galerias en desktop a un ancho máximo del 75% ( 325 px ).
