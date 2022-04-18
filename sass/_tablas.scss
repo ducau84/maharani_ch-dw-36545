@@ -1,0 +1,23 @@
+/* ------------------------Tabla de Talles------------------------ */
+table {
+    margin: 6rem auto;
+    padding: 1rem;
+    background-color: $colorTxSecundario;
+    text-align: center;
+  }
+  
+  th {
+    background: $colorTab;
+    color: $colorTxSecundario;
+    border: 2px solid;
+  }
+  
+  tr {
+    background-color: $colorTxPrincipal;
+    border: 0.1rem $colorTxSecundario dashed;
+  }
+  
+  td {
+    width: 5rem;
+    border: 0.1rem $colorTxSecundario dashed;
+  }
