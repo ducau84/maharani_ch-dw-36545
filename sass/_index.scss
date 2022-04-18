@@ -1,32 +1,32 @@
 .intro {
-    margin-top: 2rem;
-    color: $colorTxSecundario;
-    font-size: 1.5rem;
+  margin-top: 2rem;
+  color: $colorTxSecundario;
+  font-size: 1.5rem;
+}
+
+.carousel-caption h5 {
+  text-transform: uppercase;
+  text-shadow: $colorSombra;
+}
+
+.proceso {
+  margin: 20px auto;
+  color: $colorTxSecundario;
+  font-size: 1.2rem;
+  list-style-position: outside;
+  border-block: $colorTxPrincipal solid;
+
+  li {
+    list-style: disc;
   }
-  
-  .carousel-caption h5 {
-    text-transform: uppercase;
-    text-shadow: $colorSombra;
+
+  h2 {
+    color: $colorTxPrincipal;
+    border-bottom: $colorBorProc 2px solid;
   }
-  
-  .proceso {
-    margin: 20px auto;
-    color: $colorTxSecundario;
-    font-size: 1.2rem;
-    list-style-position: outside;
-    border-block: $colorTxPrincipal solid;
-  
-    li {
-      list-style: disc;
-    }
-  
-    h2 {
-      color: $colorTxPrincipal;
-      border-bottom: $colorBorProc 2px solid;
-    }
-  
-    h5 {
-      color: $colorTxProceso;
-      text-shadow: 2px 3px 0 $colorTxAzul;
-    }
+
+  h5 {
+    color: $colorTxProceso;
+    text-shadow: 2px 3px 0 $colorTxAzul;
   }
+}

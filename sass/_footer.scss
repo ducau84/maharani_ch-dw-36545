@@ -1,69 +1,71 @@
 /* ------------------------ Pie de Página------------------------  */
 footer {
-    background-image: $backgroundNavFoot;
-    background-attachment: fixed;
-    background-size: cover;
-    border-top: $colorTxPrincipal solid 0.1rem;
-    color: $colorTxSecundario;
-    text-transform: uppercase;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-  
-    .row {
-      margin: 1.5rem;
-    }
-  
-    a {
-      color: $colorTxSecundario;
-      transition: all 1s;
-    }
-  
-    p {
-      font-size: 0.9rem;
-      margin: 0;
-    }
+  background-image: $backgroundNavFoot;
+  background-attachment: fixed;
+  background-size: cover;
+  border-top: $colorTxPrincipal solid 0.1rem;
+  color: $colorTxSecundario;
+  text-transform: uppercase;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  .row {
+    margin: 1.5rem;
   }
-  
-  .redes {
-    display: flex;
-    flex-flow: column;
-    font-size: 0.7rem;
-  }
-  
-  .mpago {
-    width: 50%;
-    transition: all 333ms;
-  
-    &:hover {
-      filter: invert(48%) sepia(90%) saturate(3207%);
-    }
-  }
-  
-  .envio {
-    display: flex;
-    flex-flow: column;
-    font-size: 0.8rem;
-  }
-  
-  footer .bi {
-    font-size: 1.4rem;
-    margin: 0.25rem;
+
+  a {
     color: $colorTxSecundario;
     transition: all 1s;
   }
-  
-  .bi:hover, .redes a:hover, .envio a:hover {
-    color: $colorTxPrincipal;
+
+  p {
+    font-size: 0.9rem;
+    margin: 0;
   }
-  
-  .copyRigth {
-    text-align: center;
-  
-    p {
-      color: $colorTxSecundario;
-      font-size: 1rem;
-      text-shadow: $colorSombra;
-    }
+}
+
+.redes {
+  display: flex;
+  flex-flow: column;
+  font-size: 0.7rem;
+}
+
+.mpago {
+  width: 50%;
+  transition: all 333ms;
+
+  &:hover {
+    filter: invert(48%) sepia(90%) saturate(3207%);
   }
+}
+
+.envio {
+  display: flex;
+  flex-flow: column;
+  font-size: 0.8rem;
+}
+
+footer .bi {
+  font-size: 1.4rem;
+  margin: 0.25rem;
+  color: $colorTxSecundario;
+  transition: all 1s;
+}
+
+.bi:hover,
+.redes a:hover,
+.envio a:hover {
+  color: $colorTxPrincipal;
+}
+
+.copyRigth {
+  text-align: center;
+
+  p {
+    color: $colorTxSecundario;
+    font-size: 1rem;
+    text-shadow: $colorSombra;
+  }
+}

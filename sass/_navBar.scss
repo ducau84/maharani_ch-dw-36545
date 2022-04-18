@@ -1,6 +1,13 @@
 /* -------------------------Barra de Navegación------------------------- */
-.navbar > {
-  .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+.navbar> {
+
+  .container,
+  .container-fluid,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
     justify-content: space-around;
   }
 }
@@ -24,6 +31,7 @@
   padding: 5px;
   margin: auto 20px;
 }
+
 .nav-link {
   padding: 1px;
 

@@ -106,7 +106,13 @@ main {
 }
 
 /* -------------------------Barra de Navegación------------------------- */
-.navbar > .container, .navbar > .container-fluid, .navbar > .container-lg, .navbar > .container-md, .navbar > .container-sm, .navbar > .container-xl, .navbar > .container-xxl {
+.navbar > .container,
+.navbar > .container-fluid,
+.navbar > .container-lg,
+.navbar > .container-md,
+.navbar > .container-sm,
+.navbar > .container-xl,
+.navbar > .container-xxl {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -244,7 +250,9 @@ footer .bi {
   transition: all 1s;
 }
 
-.bi:hover, .redes a:hover, .envio a:hover {
+.bi:hover,
+.redes a:hover,
+.envio a:hover {
   color: #ff9103;
 }
 
@@ -598,7 +606,10 @@ label {
   .footer .bi {
     margin: 1rem;
   }
-  .bi-link, .pago, .envio, .telefono {
+  .bi-link,
+  .pago,
+  .envio,
+  .telefono {
     visibility: hidden;
     width: 0px;
     height: 0px;
