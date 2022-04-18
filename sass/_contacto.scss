@@ -1,0 +1,144 @@
+/* ------------------------Contacto------------------------ */
+.datos {
+    width: 27rem;
+    height: 100%;
+    margin: 1rem 2rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: $colorContacto;
+  
+    h2 {
+      font-size: 2rem;
+      text-align: left;
+      color: $colorTxPrincipal;
+    }
+  
+    h3 {
+      padding-top: 1rem;
+      padding-bottom: 0;
+      color: $colorTxForm;
+      font-size: 1rem;
+      text-decoration: underline;
+    }
+  
+    p {
+      color: $colorTxPrincipal;
+      font-size: 1.3rem;
+      transition: all 1s;
+    }
+  
+    a {
+      color: $colorTxPrincipal;
+      font-size: 1.3rem;
+      transition: all 1s;
+  
+      &:hover {
+        color: $colorTxAzul;
+      }
+    }
+  }
+  
+  .bi-whatsapp {
+    color: $colorWA;
+    transition: all 1s;
+  
+    &:hover {
+      color:$colorWAH;
+    }
+  }
+  
+  .ubicacion {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 300px;
+    overflow: hidden;
+  }
+  
+  .gmap_canvas {
+    padding-top: 1rem;
+  }
+  
+  .contacto {
+    width: 30rem;
+    height: auto;
+    margin: 1rem 2rem;
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
+    background-color: $colorContacto;
+    padding-left: 30px;
+  }
+  
+  input {
+    background-color: $colorTxSecundario;
+    width: 25rem;
+    height: 3.5rem;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: $colorTxPrincipal;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+  }
+  
+  textarea {
+    background-color: $colorTxSecundario;
+    width: 25rem;
+    height: 15rem;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: $colorTxPrincipal;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+  }
+  
+  label {
+    display: block;
+    float: center;
+  }
+  
+  .boton_form {
+    width: 25rem;
+    height: 3rem;
+    padding-top: .75rem;
+    margin: 0.5rem;
+    background-color: $colorTxPrincipal;
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+  
+    &:hover {
+      animation: menu-resaltado 1000ms linear 3ms infinite;
+      border: $colorTxAzul 0.2rem solid;
+      padding-top: .5rem;
+    }
+  }
+  
+  .aviso {
+    font-size: 1rem;
+    color: $colorTxAzul;
+  }
+  
+  .contacto {
+    h2 {
+      font-size: 32px;
+      text-align: left;
+      padding-bottom: 20px;
+      color: $colorTxPrincipal;
+    }
+  
+    h3 {
+      font-size: 16px;
+      padding-bottom: 30px;
+      color: $colorTxForm;
+    }
+  
+    p {
+      font-size: 14px;
+      color: $colorTxForm;
+    }
+  }

@@ -1,0 +1,55 @@
+/* -------------------------Barra de Navegación------------------------- */
+.navbar > {
+  .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    justify-content: space-around;
+  }
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar {
+  background-image: $backgroundNavFoot;
+  background-attachment: fixed;
+  background-size: cover;
+  color: $colorTxSecundario;
+  text-transform: uppercase;
+  z-index: 100;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: $colorTxSecundario;
+  font-size: 1.3rem;
+  padding: 5px;
+  margin: auto 20px;
+}
+.nav-link {
+  padding: 1px;
+
+  &:hover {
+    padding: 0;
+    color: $colorTxSecundario;
+    border-radius: 5px;
+    animation: menu-resaltado 1000ms linear 3ms infinite;
+  }
+}
+
+.logo img {
+  width: 100%;
+  max-width: 250px;
+  min-width: 125px;
+}
+
+.dropdown-menu {
+  background-image: $backgroundNavFoot;
+}
+
+.dropdown-item {
+  color: $colorTxSecundario;
+  text-transform: capitalize;
+
+  &:hover {
+    animation: menu-resaltado 1000ms linear 3ms infinite;
+  }
+}

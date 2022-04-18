@@ -1,0 +1,116 @@
+// Footer
+@media (min-width: $mobile) and (max-width: $tablet) {
+    html {
+      font-size: 80%;
+    }
+  
+    body {
+      overflow-x: hidden;
+    }
+  
+    .footer .container .row {
+      padding: 0;
+    }
+  }
+  
+  @media screen and (max-width: $mobile) {
+    html {
+      font-size: 75%;
+    }
+  
+    .container {
+      overflow-x: hidden;
+    }
+  
+    footer {
+      flex-flow: row;
+    }
+  
+    .footer .bi {
+      margin: 1rem;
+    }
+  
+    .bi-link, .pago, .envio, .telefono {
+      visibility: hidden;
+      width: 0px;
+      height: 0px;
+    }
+  
+    .redes {
+      p {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+        font-size: 0;
+      }
+  
+      font-size: 0;
+      flex-flow: row;
+      width: 100%;
+      height: auto;
+    }
+  }
+  // Posicionamiento Boton "volver arriba"
+  @media (min-width: $mobile) and (max-width: $desktop) {
+    #btn-back-to-top {
+        right: 2rem;
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    #btn-back-to-top {
+        right: 2rem;
+    }
+}
+// Quienes somos
+@media screen and (max-width: $mobile) {
+    .quienes {
+      max-width: 340px;
+      margin: auto;
+    }
+  
+    .quienesTexto {
+      margin: 0px;
+      max-height: 330px;
+    }
+  
+    #taller {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  //Galerias
+  @media screen and (max-width: $mobile) {
+    .container_gal {
+      grid-template-columns: auto auto;
+  
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+//Contacto
+@media (min-width: $mobile) and (max-width: $tablet) {
+    .datos {
+      width: 30rem;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .datos {
+      width: auto;
+    }
+  
+    .ubicacion {
+      padding-top: 20px;
+      padding-bottom: 10px;
+      width: auto;
+      overflow: hidden;
+    }
+  
+    .contacto {
+      width: auto;
+      margin: 1rem;
+      padding: 1rem;
+    }
+  }

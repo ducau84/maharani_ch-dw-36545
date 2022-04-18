@@ -1,0 +1,32 @@
+//animaciones
+@keyframes bgfade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes menu-resaltado {
+    0% {
+        background-color:  $colornaranjadeg1;
+    }
+
+    25% {
+        background-color:  $colornaranjadeg2;
+    }
+
+    50% {
+        background-color:  $colornaranjadeg3;
+    }
+
+    75% {
+        background-color:  $colornaranjadeg2;
+    }
+
+    100% {
+        background-color:  $colornaranjadeg1;
+    }
+}
