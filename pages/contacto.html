@@ -91,12 +91,12 @@
                         <h2>¿Dónde Estamos?</h2>
                         <div class="mapouter"><iframe
                                 src="https://maps.google.com/maps?q=bolivar%20637,%20coronel%20suarez,%20&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
-                                id="gmap_canvas" frameborder="0" scrolling="no"
-                                style="width: 400px; height: 300px;"></iframe>
+                                id="gmap_canvas" style="width: 400px; height: 300px;"></iframe>
                         </div>
+                    </div>
                 </section>
 
-                <section class="contacto">
+                <div class="contacto">
                     <div class="formulario">
                         <h2>Envianos un mensaje</h2>
                         <h3>Completá tus datos</h3>
@@ -104,12 +104,12 @@
                             <p>
                                 <label for="nombre" class="colocar_nombre">Nombre y Apellido<span
                                         class="obligatorio">*</span></label>
-                                <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
+                                <input type="text" name="introducir_nombre" id="nombre" required
                                     placeholder="Escribí tu nombre">
                             </p>
                             <p>
                                 <label for="email" class="colocar_email">Email<span class="obligatorio">*</span></label>
-                                <input type="email" name="introducir_email" id="email" required="obligatorio"
+                                <input type="email" name="introducir_email" id="email" required
                                     placeholder="Escribí tu Correo Electrónico">
                             </p>
                             <p>
@@ -120,25 +120,23 @@
                             <p>
                                 <label for="asunto" class="colocar_asunto">Asunto<span
                                         class="obligatorio">*</span></label>
-                                <input type="text" name="introducir_asunto" id="assunto" required="obligatorio"
+                                <input type="text" name="introducir_asunto" id="asunto" required
                                     placeholder="Motivo de tu consulta">
                             </p>
                             <p>
                                 <label for="mensaje" class="colocar_mensaje">Mensaje<span
                                         class="obligatorio">*</span></label>
-                                <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje"
-                                    required="obligatorio" placeholder="Deja tu comentario..."></textarea>
+                                <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required
+                                    placeholder="Deja tu comentario..."></textarea>
                             </p>
-                            <button_f type="submit" name="enviar_formulario" id="enviar" class="boton_form">
-                                <p>Enviar</p>
-                            </button_f>
-                            <p class="aviso"><span class="obligatorio"> * </span>los campos son obligatorios.
-                            </p>
+                            <button type="submit" name="enviar_formulario" id="enviar"
+                                class="boton_form">Enviar</button>
+                            <p class="aviso"><span class="obligatorio"> * </span>los campos son obligatorios.</p>
                         </form>
                     </div>
+                </div>
             </div>
         </div>
-        </section>
         <button type="button" class="btn btn-warning btn-floating btn-sm" id="btn-back-to-top">
             <i class="bi bi-arrow-up"></i>
         </button>
@@ -157,11 +155,11 @@
                             class="bi bi-twitter"></i>/MaharaniIndume1</a>
                 </div>
                 <div class="col col-sm-3 pago">
-                    <p><i class="bi bi-wallet2"></i></i>Medios de Pago:</p>
+                    <p><i class="bi bi-wallet2"></i>Medios de Pago:</p>
                     <img class="mpago" src="../img/footer/f_pago.png" alt="pago">
                 </div>
                 <div class="col col-sm-3 envio">
-                    <p><i class="bi bi-truck"></i></i>Metodos de Envío:</p>
+                    <p><i class="bi bi-truck"></i>Metodos de Envío:</p>
                     <a href="http://tascar.com.ar/" target="blank">Expreso T.A.S.</a>
                     <a href="https://www.viacargo.com.ar/" target="blank">Vía Cargo</a>
                     <a href="https://www.correoargentino.com.ar/seguimiento-de-envios" target="blank">Correo

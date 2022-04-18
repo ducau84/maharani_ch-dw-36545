@@ -5,12 +5,16 @@
 
 ## **Historial del Versiones**:
 
+### Versión 1.21 ( 18/04/2022 )
+- Depuración de código mediante la extensión de Visual Studio Code "W3C Web Validator" (https://marketplace.visualstudio.com/items?itemName=CelianRiboulet.webvalidator).
+    - Se aplicaron las correcciones necesarias a cada archivo.
+
 ### Versión 1.20 ( 17/04/2022 )
 - Unificación de la rama "aplico_bootstrap" con la rama principal (main).
 - Aplación de SASS.
     - Creación del subdirectorio SASS dentro de la carpeta RAIZ.
     - Traducción del archivo style.css original a los distintos archivos SCSS, generando un archivo de variables y un archivo SCSS por sección.
-    - Compilado automático de los archivos SCSS por parte del Visual Studio Code, mediante la extensión Live SASS Compiler ( https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass).
+    - Compilado automático de los archivos SCSS por parte del Visual Studio Code, mediante la extensión "Live SASS Compiler" ( https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass).
 
 ### Versión 1.12 ( 16/04/2022 )
 - Corrección de valores de overflow que no permitian el scroll vertical en vista "mobile apaisado" y "tablet".

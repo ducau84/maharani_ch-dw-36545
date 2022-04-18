@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es_ES">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -74,7 +74,7 @@
                     <label for="nombres">Nombres</label>
                     <input type="text" id="nombres" placeholder="Ingrese su/s Nombre/s" required>
                     <label for="apellido">Apellido</label>
-                    <input type="text" placeholder="Ingrese su Apellido" required>
+                    <input type="text" id="apellido" placeholder="Ingrese su Apellido" required>
                     <div>
                         <br>
                     </div>
@@ -96,34 +96,30 @@
                     <div>
                         ¿Para qué deporte quiere la indumentaria?
                         <select name="deporte" id="deporte" required>
-                            <option value="0" disabled>Deporte</option>
+                            <option label="Selec. Disciplina" disabled></option>
                             <option value="1">Futbol</option>
                             <option value="2">Hockey</option>
                             <option value="3">Polo</option>
                             <option value="4">Otras disciplinas</option>
                         </select>
                         <label for="otras">Otras disciplinas</label>
-                        <input type="text" placeholder="Disciplina...">
+                        <input type="text" id="otras" placeholder="Disciplina...">
                     </div>
                     <div>
                         <br>
                     </div>
                     <div>
                         <label for="cantidad">Cantidad</label>
-                        <input type="number" placeholder="Cantidad" min="1" max="100" required>
+                        <input type="number" id="cantidad" placeholder="Cantidad" min="1" max="100" required>
                     </div>
-                    <div>
                         <p>Adjuntá escudo y publicidades</p>
-                        <button_f type="button" class="boton_form">Adjuntar Archivos...</button_f>
-                    </div>
+                        <button type="button" class="boton_form">Adjuntar Archivos...</button>
                     <div>
                         <br>
                     </div>
-                    <div>
                         <p>Revisa que todos los datos sean correctos antes de enviar!</p>
-                        <button_f type="submit" class="boton_form">Enviar</button_f>
-                        <button_f type="reset" class="boton_form">Borrar todo</button_f>
-                    </div>
+                        <button type="submit" class="boton_form">Enviar</button>
+                        <button type="reset" class="boton_form">Borrar todo</button>
                 </section>
 
             </div>
@@ -146,11 +142,11 @@
                             class="bi bi-twitter"></i>/MaharaniIndume1</a>
                 </div>
                 <div class="col col-sm-3 pago">
-                    <p><i class="bi bi-wallet2"></i></i>Medios de Pago:</p>
+                    <p><i class="bi bi-wallet2"></i>Medios de Pago:</p>
                     <img class="mpago" src="../img/footer/f_pago.png" alt="pago">
                 </div>
                 <div class="col col-sm-3 envio">
-                    <p><i class="bi bi-truck"></i></i>Metodos de Envío:</p>
+                    <p><i class="bi bi-truck"></i>Metodos de Envío:</p>
                     <a href="http://tascar.com.ar/" target="blank">Expreso T.A.S.</a>
                     <a href="https://www.viacargo.com.ar/" target="blank">Vía Cargo</a>
                     <a href="https://www.correoargentino.com.ar/seguimiento-de-envios" target="blank">Correo

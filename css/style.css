@@ -480,7 +480,7 @@ td {
 .ubicacion {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  width: 300px;
+  width: 400px;
   overflow: hidden;
 }
 
@@ -527,13 +527,11 @@ textarea {
 
 label {
   display: block;
-  float: center;
 }
 
 .boton_form {
   width: 25rem;
   height: 3rem;
-  padding-top: .75rem;
   margin: 0.5rem;
   background-color: #ff9103;
   border-radius: 10px;
