@@ -5,6 +5,13 @@
 
 ## **Historial del Versiones**:
 
+### Versión 1.20 ( 17/04/2022 )
+- Unificación de la rama "aplico_bootstrap" con la rama principal (main).
+- Aplación de SASS.
+    - Creación del subdirectorio SASS dentro de la carpeta RAIZ.
+    - Traducción del archivo style.css original a los distintos archivos SCSS, generando un archivo de variables y un archivo SCSS por sección.
+    - Compilado automático de los archivos SCSS por parte del Visual Studio Code, mediante la extensión Live SASS Compiler ( https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass).
+
 ### Versión 1.12 ( 16/04/2022 )
 - Corrección de valores de overflow que no permitian el scroll vertical en vista "mobile apaisado" y "tablet".
 - Ajuste de tamaño de fuentes en footer para vistas "tablet" y "mobile apaisado".
@@ -33,6 +40,6 @@
 - Introducción de animaciones y transiciones en menúes desplegables.
 - Introducción de animaciones en ítems usando la libreria AOS (https://michalsnik.github.io/aos/).
 
-### Versión 1.0 ( 10/04/2022 )
+### Versión 1.00 ( 10/04/2022 )
 - Sitio migrado a repositorio local en GIT, para la posterior carga a GitHub.
 - Creación del archivo README.
