@@ -1,3 +1,5 @@
+/* ------------------------ Media Queries ------------------------  */
+
 // Footer
 @media (min-width: $mobile) and (max-width: $tablet) {
   html {
@@ -76,10 +78,11 @@
 
   .quienesTexto {
     margin: 0px;
-    max-height: 330px;
+    max-height: 280px;
   }
 
   #taller {
+    margin-top: 1rem;
     width: 100%;
     height: 100%;
   }
@@ -96,6 +99,19 @@
   }
 }
 
+//Presupuesto
+@media screen and (max-width: $mobilexs)  {
+  .presupuesto {
+    padding: 0.5rem;
+  }
+}
+@media (min-width: ($mobilexs + 1px)) and (max-width: $tablet) {
+  .presupuesto {
+    padding: 1.5rem;
+  }
+}
+
+
 //Contacto
 @media (min-width: $mobile) and (max-width: $tablet) {
   .datos {
@@ -103,7 +119,7 @@
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: $mobile) {
   .datos {
     width: auto;
   }

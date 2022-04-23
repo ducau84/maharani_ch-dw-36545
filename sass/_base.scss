@@ -16,7 +16,7 @@ li {
 }
 
 body {
-    max-width: 1400px;
+    max-width: $desktop;
     margin: 0 auto;
     animation: bgfade 0.5s
 }

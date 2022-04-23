@@ -1,3 +1,5 @@
+/* ------------------------ Index ------------------------  */
+
 .intro {
   margin-top: 2rem;
   color: $colorTxSecundario;
@@ -8,7 +10,9 @@
   text-transform: uppercase;
   text-shadow: $colorSombra;
 }
-
+.intro {
+  max-width: 80%;
+}
 .proceso {
   margin: 20px auto;
   color: $colorTxSecundario;

@@ -1,4 +1,5 @@
-/* ------------------------ Pie de Página------------------------  */
+/* ------------------------ Pie de Página ------------------------  */
+
 footer {
   background-image: $backgroundNavFoot;
   background-attachment: fixed;
@@ -54,18 +55,20 @@ footer .bi {
   transition: all 1s;
 }
 
-.bi:hover,
-.redes a:hover,
 .envio a:hover {
   color: $colorTxPrincipal;
 }
 
 .copyRigth {
+  font-size: 1.2rem;
+  font-weight: 100;
   text-align: center;
+  text-shadow: $colorSombra;
 
   p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: $colorTxSecundario;
-    font-size: 1rem;
-    text-shadow: $colorSombra;
+    font-size: 0.9rem;
+    text-transform: capitalize;
   }
 }

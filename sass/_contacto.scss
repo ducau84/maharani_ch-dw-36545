@@ -1,11 +1,12 @@
-/* ------------------------Contacto------------------------ */
+/* ------------------------ Contacto ------------------------ */
+
 .datos {
   width: 27rem;
   height: 100%;
   margin: 1rem 2rem;
   border-radius: 1rem;
   padding: 1rem;
-  background-color: $colorContacto;
+  background: map-get($map: $colores_fondo , $key: contacto);
 
   h2 {
     font-size: 2rem;
@@ -39,11 +40,11 @@
 }
 
 .bi-whatsapp {
-  color: $colorWA;
+  color: $colorWAH;
   transition: all 1s;
 
   &:hover {
-    color: $colorWAH;
+    color: $colorWA;
   }
 }
 
@@ -99,23 +100,6 @@ label {
   display: block;
 }
 
-.boton_form {
-  width: 25rem;
-  height: 3rem;
-  margin: 0.5rem;
-  background-color: $colorTxPrincipal;
-  border-radius: 10px;
-  text-transform: uppercase;
-  text-align: center;
-  cursor: pointer;
-
-  &:hover {
-    animation: menu-resaltado 1000ms linear 3ms infinite;
-    border: $colorTxAzul 0.2rem solid;
-    padding-top: .5rem;
-  }
-}
-
 .aviso {
   font-size: 1rem;
   color: $colorTxAzul;
@@ -139,4 +123,7 @@ label {
     font-size: 14px;
     color: $colorTxForm;
   }
+}
+.btn_send2 {
+  @include btn($colorTxSecundario, $colorTxPrincipal)
 }

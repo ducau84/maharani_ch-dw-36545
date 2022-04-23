@@ -1,12 +1,12 @@
-/* ------------------------Presupuesto------------------------ */
+/* ------------------------ Presupuesto ------------------------ */
 
 .presupuesto {
   width: 30rem;
   height: auto;
-  margin: 1rem 2rem;
+  margin: 1rem 2rem; 
   border-radius: 10px;
-  padding: 1rem;
-  background-color: $colorPres;
+  padding: 2rem;
+  background: map-get($map: $colores_fondo , $key: presupuesto);
 }
 
 .club>input[type="radio"] {
@@ -33,4 +33,13 @@
 
     color: $colorTxPrincipal;
   }
+}
+.btn_attach {
+  @include btn($colorTxAzul, $colorTxPrincipal)
+}
+.btn_send {
+  @include btn($colorTxSecundario, $colorTxAzul)
+}
+.btn_del {
+  @include btn($colorTxSecundario, $colorTab)
 }

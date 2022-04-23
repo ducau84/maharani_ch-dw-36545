@@ -1,4 +1,5 @@
-/* ------------------------Quienes Somos------------------------ */
+/* ------------------------ ¿Quienes Somos? ------------------------ */
+
 .quienes {
   display: flex;
   flex-flow: row wrap;
@@ -10,15 +11,14 @@
   width: 400px;
   font-size: 1.3rem;
   color: $colorTxAzul;
-  background: $colorFondQS;
+  background: map-get($map: $colores_fondo , $key: quienes);
   border: 2px $colorTxAzul solid;
-  padding: 25px 10px 10px 10px;
+  padding: 25px 10px;
   text-align: justify;
 }
 
 #taller {
   height: 480px;
   width: 816px;
-  border: 2px $colorTxAzul solid;
   overflow: hidden;
 }

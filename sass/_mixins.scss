@@ -1,0 +1,18 @@
+//Mixin Botones Formularios
+
+@mixin btn ($col, $bg) {
+    display: inline-block;
+    width: 25rem;
+    height: 3rem;
+    margin: 0.5rem;
+    color: $col;
+    background: $bg;
+    border-radius: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    transition: all 333ms;
+    &:active {
+        border: $col 0.2rem solid;
+      }
+}
