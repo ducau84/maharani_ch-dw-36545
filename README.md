@@ -11,6 +11,7 @@
 - Cambio de fuentes en ***títulos*** y sección ***"¿Quiénes Somos?"***.
     - Creación del archivo partial en el subdirectorio **sass** ***_fonts.scss***, importando fuentes de **Google Fonts** con el comando ***@import***.
 - Modificación del botón ***Adjuntar Archivos...*** del formulario ***Presupuesto*** cambio de clase ***button*** a ***input type=file*** y dandole estilo para que coincida con el resto de los botones del sitio.
+- Correcciónes del formulario de ***Contacto***.
 
 ### Versión 1.50 ( 22/04/2022 )
 - Optimización del tamaño de las imágenes desde el sitio ***"Optimizilla"*** ( https://imagecompressor.com/es/ ).

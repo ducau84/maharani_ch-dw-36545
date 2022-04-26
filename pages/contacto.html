@@ -87,17 +87,19 @@
                     </div>
                     <div>
                         <h3>Dirección</h3>
-                        <p>Simón Bolívar 637, 7540 Coronel Suárez <br> Provincia de Buenos Aires</p>
+                        <p>Simón Bolívar 637, CP 7540 Coronel Suárez <br> Provincia de Buenos Aires</p>
                     </div>
                     <div>
                         <h3>Teléfono</h3>
-                        <p class="telefono_ctc"> 02926 15 497162 <a
-                                href="https://api.whatsapp.com/send?phone=5492926497162&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20productos%20."
-                                target="_blank"><i class="bi bi-whatsapp"></i></a></p>
+                        <p> 
+                           <a href="tel:+5492926497162">02926 15 497162 </a><a href="https://api.whatsapp.com/send?phone=5492926497162&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20productos%20." target="_blank"><i class="bi bi-whatsapp"></i></a>
+                        </p>
                     </div>
                     <div>
                         <h3>Correo Electrónico</h3>
-                        <p><a href="mailto:maharaniindumentaria@hotmail.com">maharaniindumentaria@hotmail.com</a></p>
+                        <p>
+                            <a href="mailto:maharaniindumentaria&commat;hotmail&period;com">maharaniindumentaria&commat;hotmail&period;com</a>
+                        </p>
                     </div>
                     <div class="ubicacion">
                         <h2>¿Dónde Estamos?</h2>
@@ -113,34 +115,16 @@
                         <h2>Envianos un mensaje</h2>
                         <h3>Completá tus datos</h3>
                         <form action="enviar.php" method="get" enctype="text/plain">
-                            <p>
-                                <label for="nombre" class="colocar_nombre">Nombre y Apellido<span
-                                        class="obligatorio">*</span></label>
-                                <input type="text" name="introducir_nombre" id="nombre" required
-                                    placeholder="Escribí tu nombre">
-                            </p>
-                            <p>
-                                <label for="email" class="colocar_email">Email<span class="obligatorio">*</span></label>
-                                <input type="email" name="introducir_email" id="email" required
-                                    placeholder="Escribí tu Correo Electrónico">
-                            </p>
-                            <p>
-                                <label for="telefono" class="colocar_telefono">Teléfono Celular</label>
-                                <input type="tel" name="introducir_telefono" id="telefono"
-                                    placeholder="Código de área sin 0 y teléfono celular sin 15">
-                            </p>
-                            <p>
-                                <label for="asunto" class="colocar_asunto">Asunto<span
-                                        class="obligatorio">*</span></label>
-                                <input type="text" name="introducir_asunto" id="asunto" required
-                                    placeholder="Motivo de tu consulta">
-                            </p>
-                            <p>
-                                <label for="mensaje" class="colocar_mensaje">Mensaje<span
-                                        class="obligatorio">*</span></label>
-                                <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required
-                                    placeholder="Deja tu comentario..."></textarea>
-                            </p>
+                            <label for="nombre" class="colocar_nombre">Nombre y Apellido<span class="obligatorio">*</span></label>
+                            <input type="text" name="introducir_nombre" id="nombre" required placeholder="Escribí tu nombre">
+                            <label for="email" class="colocar_email">Email<span class="obligatorio">*</span></label>
+                            <input type="email" name="introducir_email" id="email" required placeholder="Escribí tu Correo Electrónico">
+                            <label for="telefono" class="colocar_telefono">Teléfono Celular</label>
+                            <input type="tel" name="introducir_telefono" id="telefono" placeholder="Código de área sin 0 y teléfono celular sin 15">
+                            <label for="asunto" class="colocar_asunto">Asunto<span class="obligatorio">*</span></label>
+                            <input type="text" name="introducir_asunto" id="asunto" required placeholder="Motivo de tu consulta">
+                            <label for="mensaje" class="colocar_mensaje">Mensaje<span class="obligatorio">*</span></label>
+                            <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required placeholder="Deja tu comentario..."></textarea>
                             <button type="submit" name="enviar_formulario" id="enviar" class="btn_send2">Enviar</button>
                             <p class="aviso"><span class="obligatorio"> * </span>los campos son obligatorios.</p>
                         </form>
@@ -198,7 +182,7 @@
         </div>
     </footer>
 
-     <!-- scripts -->
+    <!-- scripts -->
 
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
