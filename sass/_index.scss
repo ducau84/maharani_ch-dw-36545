@@ -11,7 +11,10 @@
   text-shadow: $colorSombra;
 }
 .intro {
-  max-width: 80%;
+  max-width: 94%;
+  p {
+    font-family: 'Signika Negative', sans-serif;
+  }
 }
 .proceso {
   margin: 20px auto;

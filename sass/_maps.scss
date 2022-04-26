@@ -1,5 +1,7 @@
 /* ------------------------ Maps ------------------------  */
 
+//color resaltado íconos redes sociales/whatsapp
+
 $redes-sociales: (
     twitter : $colorTW,
     facebook : $colorFace,
@@ -14,6 +16,9 @@ $redes-sociales: (
         color: $valor
     }
 }
+
+//mapeado de colores de fondo secciones
+
 $colores_fondo: (
     presupuesto: $colorPres,
     quienes: $colorFondQS,

@@ -5,7 +5,14 @@
 
 ## **Historial del Versiones**:
 
-### Version 1.50 ( 22/04/2022 )
+### Versión 1.60 ( 26/04/2022 )
+- Cambio de formato de archivos de la galería ***Camisetas de Polo*** de **PNG** a **JPG** como el resto de las galerías.
+- Introducción de comentarios descriptivos dentro de cada archivo **HTML**.
+- Cambio de fuentes en ***títulos*** y sección ***"¿Quiénes Somos?"***.
+    - Creación del archivo partial en el subdirectorio **sass** ***_fonts.scss***, importando fuentes de **Google Fonts** con el comando ***@import***.
+- Modificación del botón ***Adjuntar Archivos...*** del formulario ***Presupuesto*** cambio de clase ***button*** a ***input type=file*** y dandole estilo para que coincida con el resto de los botones del sitio.
+
+### Versión 1.50 ( 22/04/2022 )
 - Optimización del tamaño de las imágenes desde el sitio ***"Optimizilla"*** ( https://imagecompressor.com/es/ ).
 - Introducción de función ***mixin*** en archivo ***_mixins.scss*** (utilización del mismo en botones de formularios de *Contacto* y *Presupuesto*).
 - Introducción de Mapas y la función each en el archivo ***_maps.scss***:

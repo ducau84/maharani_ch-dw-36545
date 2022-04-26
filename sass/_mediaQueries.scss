@@ -1,6 +1,6 @@
 /* ------------------------ Media Queries ------------------------  */
 
-// Footer
+// Pie de página
 @media (min-width: $mobile) and (max-width: $tablet) {
   html {
     font-size: 80%;
@@ -24,29 +24,20 @@
     overflow-x: hidden;
   }
 
-  footer {
-    flex-flow: row;
-  }
-
   .footer .bi {
-    margin: 1rem;
+    margin: 2rem;
   }
 
   .bi-link,
   .pago,
   .envio,
   .telefono {
-    visibility: hidden;
-    width: 0px;
-    height: 0px;
+    display: none
   }
 
   .redes {
     p {
-      visibility: hidden;
-      width: 0px;
-      height: 0px;
-      font-size: 0;
+      display: none;
     }
 
     font-size: 0;
@@ -65,7 +56,7 @@
 
 @media screen and (max-width: $mobile) {
   #btn-back-to-top {
-    right: 2rem;
+    right: 1rem;
   }
 }
 
@@ -100,14 +91,22 @@
 }
 
 //Presupuesto
-@media screen and (max-width: $mobilexs)  {
+@media screen and (max-width: $mobilexs) {
   .presupuesto {
     padding: 0.5rem;
   }
 }
+
 @media (min-width: ($mobilexs + 1px)) and (max-width: $tablet) {
   .presupuesto {
     padding: 1.5rem;
+
+    .btn_attach {
+      span {
+        top: -4.5rem;
+
+      }
+    }
   }
 }
 

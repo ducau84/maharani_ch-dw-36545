@@ -9,12 +9,15 @@
   margin: 0;
   height: 480px;
   width: 400px;
-  font-size: 1.3rem;
-  color: $colorTxAzul;
+  padding: 3rem 1rem;
   background: map-get($map: $colores_fondo , $key: quienes);
   border: 2px $colorTxAzul solid;
-  padding: 25px 10px;
-  text-align: justify;
+  p {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.4rem;
+    text-align: justify;
+    color: $colorTxAzul;
+  }
 }
 
 #taller {
