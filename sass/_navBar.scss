@@ -9,7 +9,7 @@
   .container-sm,
   .container-xl,
   .container-xxl {
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
 }
 
@@ -55,6 +55,12 @@
   background-image: $backgroundNavFoot;
 }
 
+.dropdown-menu.show {
+  border-radius: 0;
+  animation: desplegar-menu 400ms ease-in-out forwards;
+  transform-origin: top center
+}
+
 .dropdown-item {
   color: $colorTxSecundario;
   text-transform: capitalize;
@@ -63,3 +69,8 @@
     animation: menu-resaltado 1000ms linear 3ms infinite;
   }
 }
+
+#navbarSupportedContent {
+    animation: aparece-menu 333ms ease-in-out forwards;
+    transform-origin: top left
+  }

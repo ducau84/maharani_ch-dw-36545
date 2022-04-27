@@ -9,6 +9,20 @@
     }
 }
 
+@keyframes desplegar-menu {
+    0% {
+        transform: scaleY(0)
+    }
+
+    80% {
+        transform: scaleY(1.1)
+    }
+
+    100% {
+        transform: scaleY(1)
+    }
+}
+
 @keyframes menu-resaltado {
     0% {
         background-color: $colornaranjadeg1;
@@ -29,4 +43,15 @@
     100% {
         background-color: $colornaranjadeg1;
     }
+}
+@keyframes aparece-menu {
+    0% {
+       transform: rotateY(90deg)
+   }
+   80% {
+       transform: rotateY(-10deg)
+   }
+   100% {
+       transform: rotateY(0)
+   }
 }
