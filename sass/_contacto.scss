@@ -40,11 +40,11 @@
 }
 
 .bi-whatsapp {
-  color: $colorWAH;
+  color: $colorWA;
   transition: all 1s;
 
   &:hover {
-    color: $colorWA;
+    color: $colorWAH;
   }
 }
 

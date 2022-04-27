@@ -21,6 +21,7 @@
   background-image: $backgroundNavFoot;
   background-attachment: fixed;
   background-size: cover;
+  border-bottom: $colorTxPrincipal solid 0.1rem;
   color: $colorTxSecundario;
   text-transform: uppercase;
   z-index: 100;

@@ -1,9 +1,14 @@
 # *<h2 align=center>**Maharani Indumentaria**</h2>*
 
-### **Descripción del repositorio**:
+## **Descripción del repositorio**:
 *Repositorio del Proyecto **"Maharani Indumentaria"**, para el curso de Desarrollo Web, Comisión 36.545 de **Coder House**.*
 
 ## **Historial del Versiones**:
+
+### Versión 1.65 ( 27/04/2022 )
+- Corrección de tamaño de caja de texto en la sección ***Quienes Somos*** para que permita la visibilidad total del texto en vista ***mobile***, la cual se truncaba con el cambio de fuente introducido en la **Versión 1.60**.
+- Cambio de propiedad de fondo para que cubra el total de la pantalla en tamaños mayores a la vista ***desktop*** (**>1400px**).
+- Se agregó un borde inferior a la ***navbar***, espejando al utilizado en el ***footer***.
 
 ### Versión 1.60 ( 26/04/2022 )
 - Cambio de formato de archivos de la galería ***Camisetas de Polo*** de **PNG** a **JPG** como el resto de las galerías.

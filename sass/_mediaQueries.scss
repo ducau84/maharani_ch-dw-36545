@@ -69,7 +69,7 @@
 
   .quienesTexto {
     margin: 0px;
-    max-height: 280px;
+    max-height: 320px;
   }
 
   #taller {
@@ -95,19 +95,25 @@
   .presupuesto {
     padding: 0.5rem;
   }
-}
 
-@media (min-width: ($mobilexs + 1px)) and (max-width: $tablet) {
-  .presupuesto {
-    padding: 1.5rem;
-
-    .btn_attach {
-      span {
-        top: -4.5rem;
-
-      }
+  .btn_attach {
+    span {
+      top: -4.6rem;
     }
   }
+}
+
+@media (min-width: ($mobilexs+ 1px)) and (max-width: $tablet) {
+  .presupuesto {
+    padding: 1.5rem;
+  }
+
+  .btn_attach {
+    span {
+      top: -4.4rem;
+    }
+  }
+
 }
 
 
