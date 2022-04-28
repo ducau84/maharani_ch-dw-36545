@@ -213,6 +213,26 @@ main {
   display: none;
 }
 
+.error {
+  max-width: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem;
+}
+
+.error img {
+  width: 100%;
+}
+
+.goback h2 {
+  text-align: center;
+  color: white;
+}
+
 /* ------------------------- Barra de Navegación ------------------------- */
 .navbar > .container,
 .navbar > .container-fluid,
@@ -913,12 +933,6 @@ label {
   }
 }
 
-/* @media (min-width: $mobile) and (max-width: $tablet) {
-  .datos {
-    width: 30rem;
-  }
-}
- */
 @media screen and (max-width: 576px) {
   .datos {
     width: 30.5rem;
@@ -934,7 +948,8 @@ label {
     margin: 1rem;
     padding: 1rem;
   }
-  .contacto input, .contacto textarea {
+  .contacto input,
+  .contacto textarea {
     max-width: 100%;
   }
   .contacto .btn_send2 {

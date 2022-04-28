@@ -145,12 +145,6 @@
 
 
 //Contacto
-/* @media (min-width: $mobile) and (max-width: $tablet) {
-  .datos {
-    width: 30rem;
-  }
-}
- */
 @media screen and (max-width: $mobile) {
   .datos {
     width: 30.5rem;
@@ -167,9 +161,12 @@
     width: auto;
     margin: 1rem;
     padding: 1rem;
-    input, textarea {
+
+    input,
+    textarea {
       max-width: 100%;
     }
+
     .btn_send2 {
       width: 100%;
       margin: 1rem 0;

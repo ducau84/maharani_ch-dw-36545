@@ -36,6 +36,7 @@ main {
 .titulo {
     font-size: 1.5rem;
     text-align: center;
+
     h1 {
         font-family: 'Bree Serif', serif;
         color: $colorTxPrincipal;
@@ -50,4 +51,19 @@ main {
     bottom: 20px;
     right: 20rem;
     display: none;
+}
+
+.error {
+    max-width: 800px;
+    display: flex;
+   justify-content: center;
+   padding: 2rem;
+  img {
+        width: 100%;
+    }
+}
+
+.goback h2 {
+    text-align: center;
+    color: $colorTxSecundario;
 }
