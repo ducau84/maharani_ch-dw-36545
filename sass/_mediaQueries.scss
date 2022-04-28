@@ -1,5 +1,12 @@
 /* ------------------------ Media Queries ------------------------  */
 
+//logo
+@media screen and (max-width: $mobile) {
+  .logo {
+    max-width: 50%;
+  }
+}
+
 // Pie de página
 @media (min-width: $mobile) and (max-width: $tablet) {
   html {
@@ -62,20 +69,31 @@
 
 // Quienes somos
 @media screen and (max-width: $mobile) {
-  .quienes {
-    max-width: 340px;
-    margin: auto;
-  }
-
   .quienesTexto {
-    margin: 0px;
-    max-height: 320px;
+    width: 100%;
+    margin: 0;
+    padding: 1.5rem;
   }
 
   #taller {
     margin-top: 1rem;
+  }
+}
+
+
+@media (min-width: ($mobile + 1px)) and (max-width: ($tablet + 370px)) {
+  .quienes {
+    width: 780px;
+    margin: 0 auto;
+  }
+
+  .quienesTexto {
+    margin: 0;
     width: 100%;
-    height: 100%;
+  }
+
+  #taller {
+    margin-top: 2rem;
   }
 }
 
@@ -94,11 +112,20 @@
 @media screen and (max-width: $mobilexs) {
   .presupuesto {
     padding: 0.5rem;
-  }
 
-  .btn_attach {
-    span {
-      top: -4.6rem;
+    input {
+      width: 100%;
+    }
+
+    .btn_attach,
+    .btn_send,
+    .btn_del {
+      width: 100%;
+      margin: 1rem 0;
+
+      span {
+        top: -4.6rem;
+      }
     }
   }
 }
@@ -118,21 +145,21 @@
 
 
 //Contacto
-@media (min-width: $mobile) and (max-width: $tablet) {
+/* @media (min-width: $mobile) and (max-width: $tablet) {
   .datos {
     width: 30rem;
   }
 }
-
+ */
 @media screen and (max-width: $mobile) {
   .datos {
-    width: auto;
+    width: 30.5rem;
   }
 
   .ubicacion {
+    width: auto;
     padding-top: 20px;
     padding-bottom: 10px;
-    width: auto;
     overflow: hidden;
   }
 
@@ -140,5 +167,12 @@
     width: auto;
     margin: 1rem;
     padding: 1rem;
+    input, textarea {
+      max-width: 100%;
+    }
+    .btn_send2 {
+      width: 100%;
+      margin: 1rem 0;
+    }
   }
 }

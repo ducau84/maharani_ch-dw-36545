@@ -1,28 +1,30 @@
 /* ------------------------ ¿Quienes Somos? ------------------------ */
 
 .quienes {
-  margin: 2rem;
+  margin: 0 auto;
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
 }
 
 .quienesTexto {
-  margin: 0;
-  height: 480px;
-  width: 400px;
-  padding: 3rem 1rem;
+  margin: 0 1rem;
+  width: 320px;
+  height: 100%;
+  padding: 2.8rem 1rem;
   background: map-get($map: $colores_fondo , $key: quienes);
   border: 2px $colorTxAzul solid;
   p {
+    width: 100%;
     font-family: 'PT Sans', sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     text-align: justify;
     color: $colorTxAzul;
   }
 }
 
 #taller {
-  height: 480px;
-  width: 816px;
-  overflow: hidden;
+  img {
+    width: 100%;
+  }
 }
