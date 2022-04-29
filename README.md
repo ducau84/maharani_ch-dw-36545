@@ -7,6 +7,7 @@
 
 ### Versión 1.70 ( 28/04/2022 )
 - Creación de la pagina para mostrar en caso que se produzca el **"Error 404"**.
+- Modificación de contenedores de camisetas en secciones ***Galerias***, se le aplico fondo y redondeo de bordes. 
 
 ### Versión 1.65 ( 27/04/2022 )
 - Corrección de tamaño de caja de texto en la sección ***Quienes Somos*** para que permita la visibilidad total del texto en vista ***mobile***, la cual se truncaba con el cambio de fuente introducido en la **Versión 1.60**.

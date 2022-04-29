@@ -221,6 +221,7 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 2rem;
+  margin: 0 auto;
 }
 
 .error img {
@@ -491,13 +492,6 @@ footer .bi {
 }
 
 /* ------------------------- Galerias ------------------------ */
-/* .galeria h2 {
-  position: relative;
-  right: 0;
-  color: $colorTxSecundario;
-  margin-left: 0 auto;
-  text-align: left;
-} */
 .galeria {
   margin: 2rem 0;
 }
@@ -507,7 +501,7 @@ footer .bi {
   color: white;
 }
 
-.galeria .container__galeria {
+.galeria__container {
   display: -ms-grid;
   display: grid;
   width: 100%;
@@ -521,14 +515,14 @@ footer .bi {
           justify-content: center;
 }
 
-.galeria .container__galeria .camiseta {
+.galeria__container .camiseta {
   background: rgba(255, 255, 255, 0.74);
   border: 0.14rem #ff9103 solid;
   border-radius: 1rem;
   max-width: 300px;
 }
 
-.galeria .container__galeria .camiseta img {
+.galeria__container .camiseta img {
   max-width: 100%;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
@@ -536,7 +530,7 @@ footer .bi {
   transition: all 500ms;
 }
 
-.galeria .container__galeria .camiseta__desc {
+.galeria__container .camiseta__desc {
   font-family: 'Bree Serif', serif;
   font-weight: 600;
   padding: 0.5rem;
@@ -546,7 +540,7 @@ footer .bi {
   width: 100%;
 }
 
-.galeria .container__galeria .camiseta:hover {
+.galeria__container .camiseta:hover {
   -webkit-filter: saturate(2);
           filter: saturate(2);
   -webkit-box-shadow: rgba(255, 255, 255, 0.4) 0px 2px 4px, rgba(255, 255, 255, 0.3) 0px 7px 13px -3px, rgba(255, 255, 255, 0.2) 0px -3px 0px inset;
@@ -913,12 +907,13 @@ label {
 }
 
 @media screen and (max-width: 576px) {
-  .container__galeria {
+  .galeria__container {
     -ms-grid-columns: auto auto;
         grid-template-columns: auto auto;
   }
-  .container__galeria img {
-    max-width: 100%;
+  .galeria__container .camiseta__desc {
+    font-size: 0.8rem;
+    font-weight: 200;
   }
 }
 

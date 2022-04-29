@@ -1,12 +1,5 @@
 /* ------------------------- Galerias ------------------------ */
 
-/* .galeria h2 {
-  position: relative;
-  right: 0;
-  color: $colorTxSecundario;
-  margin-left: 0 auto;
-  text-align: left;
-} */
 
 .galeria {
   margin: 2rem 0;
@@ -16,7 +9,7 @@
     color: $colorTxSecundario;
   }
 
-  .container__galeria {
+  &__container {
     display: grid;
     width: 100%;
     padding: 2rem;

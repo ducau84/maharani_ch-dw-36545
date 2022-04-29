@@ -99,11 +99,15 @@
 
 //Galerias
 @media screen and (max-width: $mobile) {
-  .container__galeria {
+  .galeria {
+  &__container {
     grid-template-columns: auto auto;
-
-    img {
-      max-width: 100%;
+    .camiseta {
+      &__desc {
+        font-size: 0.8rem;
+        font-weight: 200;
+      }
+    }
     }
   }
 }
