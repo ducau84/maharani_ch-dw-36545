@@ -16,6 +16,7 @@ $colorTW: rgb(29, 155, 240);
 $colorContacto: rgb(233, 233, 233);
 $colorTxForm: rgb(0, 0, 0);
 $colorBorProc: rgb(192, 192, 192);
+$colorCamiseta:rgba(255, 255, 255, 0.74);
 $colorSombra: 2px 0 0 rgb(0, 0, 0),
 -2px 0 0 rgb(0, 0, 0),
 0 2px 0 rgb(0, 0, 0),
@@ -24,6 +25,9 @@ $colorSombra: 2px 0 0 rgb(0, 0, 0),
 -1px -1px 0 rgb(0, 0, 0),
 1px -1px 0 rgb(0, 0, 0),
 -1px 1px 0 rgb(0, 0, 0);
+$colorSombraGal: rgba(255, 255, 255, 0.4) 0px 2px 4px,
+rgba(255, 255, 255, 0.3) 0px 7px 13px -3px,
+rgba(255, 255, 255, 0.2) 0px -3px 0px inset;
 $colornaranjadeg1: rgb(255, 166, 0);
 $colornaranjadeg2: rgba(255, 166, 0, 0.75);
 $colornaranjadeg3: rgba(255, 166, 0, 0.5);

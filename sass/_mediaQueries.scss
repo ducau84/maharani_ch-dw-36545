@@ -99,7 +99,7 @@
 
 //Galerias
 @media screen and (max-width: $mobile) {
-  .container_gal {
+  .container__galeria {
     grid-template-columns: auto auto;
 
     img {

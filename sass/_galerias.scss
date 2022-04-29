@@ -1,36 +1,57 @@
 /* ------------------------- Galerias ------------------------ */
 
-.galeria h2 {
+/* .galeria h2 {
+  position: relative;
+  right: 0;
   color: $colorTxSecundario;
-  margin-left: 2rem;
+  margin-left: 0 auto;
   text-align: left;
-  width: fit-content;
-}
+} */
 
-.container_gal {
-  display: grid;
-  width: 100%;
-  padding: 2rem;
-  grid-template-columns: auto auto auto;
-  gap: 0.5rem;
-  text-align: center;
-  justify-content: center;
+.galeria {
+  margin: 2rem 0;
 
-  img {
-    max-width: 75%;
-    border: 2px $colorTxPrincipal solid;
-    border-radius: 4px;
-    transition: all 500ms;
+  h2 {
+    text-align: center;
+    color: $colorTxSecundario;
+  }
 
-    &:hover {
-      filter: saturate(2);
+  .container__galeria {
+    display: grid;
+    width: 100%;
+    padding: 2rem;
+    grid-template-columns: auto auto auto;
+    gap: 1rem 2rem;
+    text-align: center;
+    justify-content: center;
+
+    .camiseta {
+      background: $colorCamiseta;
+      border: 0.14rem $colorTxPrincipal solid;
+      border-radius: 1rem;
+      max-width: 300px;
+
+      img {
+        max-width: 100%;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        transition: all 500ms;
+      }
+
+      &__desc {
+        font-family: 'Bree Serif', serif;
+        font-weight: 600;
+        padding: 0.5rem;
+        color: $colorTxAzul;
+        text-align: center;
+        text-transform: uppercase;
+        width: 100%;
+      }
+
+      &:hover {
+        filter: saturate(2);
+        box-shadow: $colorSombraGal
+      }
     }
   }
-}
-
-.desc {
-  color: $colorTxSecundario;
-  text-align: center;
-  text-transform: uppercase;
-  width: 100%;
 }
