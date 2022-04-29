@@ -1,21 +1,24 @@
 /* ------------------------ Index ------------------------  */
 
 .intro {
+  max-width: 92%;
   margin-top: 2rem;
+  padding: 1.5rem;
   color: $colorTxSecundario;
   font-size: 1.5rem;
+  box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.2); 
+  border-radius: 5px;
+  background-color: $colorIntro;
+  p {
+    font-family: 'Signika Negative', sans-serif;
+  }
 }
 
 .carousel-caption h4 {
   text-transform: uppercase;
   text-shadow: $colorSombra;
 }
-.intro {
-  max-width: 94%;
-  p {
-    font-family: 'Signika Negative', sans-serif;
-  }
-}
+
 .proceso {
   margin: 20px auto;
   color: $colorTxSecundario;

@@ -4,32 +4,23 @@
     padding: 0;
     box-sizing: border-box;
     border: 0;
-}
-
-a {
-    text-decoration: none;
-}
-
-li {
     list-style: none;
 }
 
 body {
     background-image: $backgroundPrincipal;
     margin: 0 auto;
-    animation: bgfade 0.5s;
+    animation: bgfade 1.5s;
     font-family: 'Kanit', sans-serif;
-}
-
-main {
-    max-width: $desktop;
-    margin: 0 auto;
-    padding: 10px;
-}
-
-.row {
-    justify-content: center;
-    margin: auto;
+    main {
+        max-width: $desktop;
+        margin: 0 auto;
+        padding: 10px;
+        .row {
+            justify-content: center;
+            margin: auto;
+        }
+    }
 }
 
 .titulo {
@@ -50,21 +41,4 @@ main {
     bottom: 20px;
     right: 20rem;
     display: none;
-}
-
-.error {
-    max-width: 800px;
-    display: flex;
-    justify-content: center;
-    padding: 2rem;
-    margin: 0 auto;
-
-    img {
-        width: 100%;
-    }
-}
-
-.goback h2 {
-    text-align: center;
-    color: $colorTxSecundario;
 }

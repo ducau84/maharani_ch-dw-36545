@@ -4,21 +4,25 @@ table {
   margin: 6rem auto;
   padding: 1rem;
   background-color: $colorTxSecundario;
+  font-size: 1rem;
   text-align: center;
+  tr {
+    background-color: $colorTxPrincipal;
+    border: 0.1rem $colorTxSecundario dashed;
+    th {
+      padding: 0.4rem;
+      background: $colorTab;
+      color: $colorTxSecundario;
+      border: 2px solid;
+    }
+    td {
+      width: 5rem;
+      border: inherit;
+    }
+  }
+  
 }
 
-th {
-  background: $colorTab;
-  color: $colorTxSecundario;
-  border: 2px solid;
-}
 
-tr {
-  background-color: $colorTxPrincipal;
-  border: 0.1rem $colorTxSecundario dashed;
-}
 
-td {
-  width: 5rem;
-  border: 0.1rem $colorTxSecundario dashed;
-}
+

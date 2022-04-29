@@ -32,31 +32,30 @@
     color: $colorTxPrincipal;
     font-size: 1.3rem;
     transition: all 1s;
+    text-decoration: none;
 
     &:hover {
       color: $colorTxAzul;
     }
   }
-}
-
-.bi-whatsapp {
-  color: $colorWA;
-  transition: all 1s;
-
-  &:hover {
-    color: $colorWAH;
+  .bi-whatsapp {
+    color: $colorWA;
+    transition: all 1s;
+  
+    &:hover {
+      color: $colorWAH;
+    }
   }
-}
-
-.ubicacion {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  width: 100%;
-  overflow: hidden;
-}
-
-#gmap_canvas {
-  padding-top: 1rem;
+  .ubicacion {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    #gmap_canvas {
+      width: 28rem;
+      height: 30rem;
+      padding-top: 1rem;
+    }
+  }
 }
 
 .contacto {
@@ -84,37 +83,30 @@
     font-size: 14px;
     color: $colorTxForm;
   }
+
+  label {
+    display: block;
+  }
+  
+  .aviso {
+    font-size: 1rem;
+    color: $colorTxAzul;
+  }
+
+  input {
+    @include formarea (1rem, 1.5rem)
+  }
+
+  textarea {
+    @include formarea (15rem, 1rem);
+    
+  }
+  
+  .btn_send2 {
+    @include btn($colorTxSecundario, $colorTxPrincipal)
+  }
 }
 
-input {
-  background-color: $colorTxSecundario;
-  width: 25rem;
-  height: 3.5rem;
-  margin: 10px 0 20px 0;
-  padding-left: 10px;
-  border-radius: 5px ;
-  border: $colorTxPrincipal 1px solid;
-}
 
-textarea {
-  background-color: $colorTxSecundario;
-  width: 25rem;
-  height: 15rem;
-  border: $colorTxPrincipal 1px solid;
-  border-radius: 5px;
-  margin: 10px 0 20px 0;
-  padding: 15px 0 0 10px;
-}
 
-label {
-  display: block;
-}
 
-.aviso {
-  font-size: 1rem;
-  color: $colorTxAzul;
-}
-
-.btn_send2 {
-  @include btn($colorTxSecundario, $colorTxPrincipal)
-}

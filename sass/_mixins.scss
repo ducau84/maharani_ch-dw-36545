@@ -16,3 +16,13 @@
         border: $col 0.2rem solid;
       }
 }
+
+@mixin formarea ($ht, $pd) {
+  width: 100%;
+  height: $ht;
+  margin: 1rem 0;
+  padding: $pd;
+  background-color: $colorTxSecundario;
+  border: $colorTxPrincipal 1px solid;
+  border-radius: 5px;
+} 

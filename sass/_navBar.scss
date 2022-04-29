@@ -1,22 +1,4 @@
 /* ------------------------- Barra de Navegación ------------------------- */
-
-.navbar> {
-
-  .container,
-  .container-fluid,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container-xl,
-  .container-xxl {
-    justify-content: space-evenly;
-  }
-}
-
-.navbar-collapse {
-  flex-grow: 0;
-}
-
 .navbar {
   background-image: $backgroundNavFoot;
   background-attachment: fixed;
@@ -25,13 +7,55 @@
   color: $colorTxSecundario;
   text-transform: uppercase;
   z-index: 100;
-}
 
-.navbar-dark .navbar-nav .nav-link {
-  color: $colorTxSecundario;
-  font-size: 1.3rem;
-  padding: 5px;
-  margin: auto 20px;
+  &> {
+
+    .container,
+    .container-fluid,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+      justify-content: space-evenly;
+    }
+  }
+
+  &-collapse {
+    flex-grow: 0;
+  }
+
+  &-dark &-nav .nav-link {
+    color: $colorTxSecundario;
+    font-size: 1.3rem;
+    padding: 5px;
+    margin: auto 20px;
+  }
+  .logo img {
+    width: 100%;
+    max-width: 250px;
+    min-width: 125px;
+  }
+  .dropdown {
+    &-menu {
+      background-image: $backgroundNavFoot;
+  
+      &.show {
+        border-radius: 0;
+        animation: desplegar-menu 400ms ease-in-out forwards;
+        transform-origin: top center
+      }
+    }
+  
+    &-item {
+      color: $colorTxSecundario;
+      text-transform: capitalize;
+  
+      &:hover {
+        animation: menu-resaltado 1000ms linear 3ms infinite;
+      }
+    }
+  }
 }
 
 .nav-link {
@@ -45,32 +69,7 @@
   }
 }
 
-.logo img {
-  width: 100%;
-  max-width: 250px;
-  min-width: 125px;
-}
-
-.dropdown-menu {
-  background-image: $backgroundNavFoot;
-}
-
-.dropdown-menu.show {
-  border-radius: 0;
-  animation: desplegar-menu 400ms ease-in-out forwards;
-  transform-origin: top center
-}
-
-.dropdown-item {
-  color: $colorTxSecundario;
-  text-transform: capitalize;
-
-  &:hover {
-    animation: menu-resaltado 1000ms linear 3ms infinite;
-  }
-}
-
 #navbarSupportedContent {
-    animation: aparece-menu 333ms ease-in-out forwards;
-    transform-origin: top left
-  }
+  animation: aparece-menu 500ms ease-in-out forwards;
+  transform-origin: top left
+}

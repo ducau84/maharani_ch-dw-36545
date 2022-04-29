@@ -5,9 +5,11 @@
 
 ## **Historial del Versiones**:
 
-### Versión 1.70 ( 28/04/2022 )
+### Versión 1.70 ( 29/04/2022 )
 - Creación de la pagina para mostrar en caso que se produzca el **"Error 404"**.
 - Modificación de contenedores de camisetas en secciones ***Galerias***, se le aplico fondo y redondeo de bordes. 
+- Optimización de nesting en **SCSS**.
+- Aplicación de un fondo a la sección ***Intro*** del ***Home***.
 
 ### Versión 1.65 ( 27/04/2022 )
 - Corrección de tamaño de caja de texto en la sección ***Quienes Somos*** para que permita la visibilidad total del texto en vista ***mobile***, la cual se truncaba con el cambio de fuente introducido en la **Versión 1.60**.
@@ -47,8 +49,8 @@
 - Unificación de la rama ***aplico_bootstrap*** con la rama principal (***main***).
 - Aplación de SASS.
     - Creación del subdirectorio ***sass*** dentro de la carpeta RAIZ.
-    - *Traducción* del archivo ***style.css*** original a los distintos archivos **SCSS**, generando un archivo de variables y un archivo SCSS por sección.
-    - Compilado automático de los archivos SCSS por parte del **Visual Studio Code**, mediante la extensión **"Live SASS Compiler"** ( https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass).
+    - *"Traducción"* del archivo ***style.css*** original a los distintos archivos **SCSS**, creando un archivo de variables y un archivo **SCSS** por sección.
+    - Compilado automático de los archivos **SCSS** por parte del **Visual Studio Code**, mediante la extensión **"Live SASS Compiler"** ( https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass).
 
 ### Versión 1.12 ( 16/04/2022 )
 - Corrección de valores de ***overflow*** que no permitian el scroll vertical en vista "***mobile*** apaisado" y ***"tablet"***.

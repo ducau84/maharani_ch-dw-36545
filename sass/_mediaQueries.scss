@@ -69,14 +69,16 @@
 
 // Quienes somos
 @media screen and (max-width: $mobile) {
-  .quienesTexto {
-    width: 100%;
-    margin: 0;
-    padding: 1.5rem;
-  }
+  .quienes {
+    &__texto {
+      width: 100%;
+      margin: 0;
+      padding: 1.5rem;
+    }
 
-  #taller {
-    margin-top: 1rem;
+    #taller {
+      margin-top: 1rem;
+    }
   }
 }
 
@@ -85,30 +87,42 @@
   .quienes {
     width: 780px;
     margin: 0 auto;
-  }
 
-  .quienesTexto {
-    margin: 0;
-    width: 100%;
-  }
+    .quienesTexto {
+      margin: 0;
+      width: 100%;
+    }
 
-  #taller {
-    margin-top: 2rem;
+    #taller {
+      margin-top: 2rem;
+    }
   }
 }
 
 //Galerias
 @media screen and (max-width: $mobile) {
   .galeria {
-  &__container {
-    grid-template-columns: auto auto;
-    .camiseta {
-      &__desc {
-        font-size: 0.8rem;
-        font-weight: 200;
+    &__container {
+      grid-template-columns: auto auto;
+
+      .camiseta {
+        &__desc {
+          font-size: 0.8rem;
+          font-weight: 200;
+        }
       }
     }
-    }
+  }
+}
+
+//Tabla de talles
+@media screen and (max-width: $mobile) {
+  table {
+    th {
+    padding: 0.4rem;
+    font-size: 0.8rem;
+    font-weight: 100;
+  }
   }
 }
 
@@ -137,16 +151,14 @@
 @media (min-width: ($mobilexs+ 1px)) and (max-width: $tablet) {
   .presupuesto {
     padding: 1.5rem;
-  }
 
-  .btn_attach {
-    span {
-      top: -4.4rem;
+    .btn_attach {
+      span {
+        top: -4.3rem;
+      }
     }
   }
-
 }
-
 
 //Contacto
 @media screen and (max-width: $mobile) {
