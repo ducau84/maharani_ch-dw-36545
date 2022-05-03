@@ -1,28 +1,65 @@
 /* ------------------------ Tabla de Talles ------------------------ */
-
-table {
-  margin: 6rem auto;
+.talles {
+  max-width: $tabla;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column wrap;
+  font-family: 'Signika Negative', sans-serif;
+  align-items: center;
   padding: 1rem;
-  background-color: $colorTxSecundario;
-  font-size: 1rem;
-  text-align: center;
-  tr {
-    background-color: $colorTxPrincipal;
-    border: 0.1rem $colorTxSecundario dashed;
-    th {
-      padding: 0.4rem;
-      background: $colorTab;
-      color: $colorTxSecundario;
-      border: 2px solid;
+
+  &__info,
+  &__guia {
+    display: flex;
+    flex-flow: column;
+    padding: 1.5rem;
+
+    h2,
+    h3 {
+      color: $colorTxPrincipal;
     }
-    td {
-      width: 5rem;
-      border: inherit;
+
+    p {
+      color: $colorTxSecundario;
+    }
+
+
+  }
+
+  &__fem,
+  &__masc {
+    display: flex;
+    flex-flow: row wrap;
+
+    &__camiseta {
+      width: 100%;
+      height: auto;
+      margin: 1rem;
+    }
+
+    table {
+      margin: 1rem;
+      padding: 1rem;
+      background-color: $colorTxSecundario;
+      font-size: 1rem;
+      text-align: center;
+
+      tr {
+        background-color: $colorTxPrincipal;
+        border: 0.1rem $colorTxSecundario dashed;
+
+        th {
+          padding: 0.4rem;
+          background: $colorTab;
+          color: $colorTxSecundario;
+          border: 2px solid;
+        }
+
+        td {
+          width: 5rem;
+          border: inherit;
+        }
+      }
     }
   }
-  
 }
-
-
-
-

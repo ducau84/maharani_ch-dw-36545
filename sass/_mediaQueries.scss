@@ -88,7 +88,7 @@
     width: 780px;
     margin: 0 auto;
 
-    &__texto {
+    .quienesTexto {
       margin: 0;
       width: 100%;
     }
@@ -116,76 +116,86 @@
 }
 
 //Tabla de talles
-@media screen and (max-width: $mobile) {
-  table {
-    th {
-    padding: 0.4rem;
-    font-size: 0.8rem;
-    font-weight: 100;
-  }
-  }
-}
-
-//Presupuesto
-@media screen and (max-width: $mobilexs) {
-  .presupuesto {
-    padding: 0.5rem;
-
-    input {
-      width: 100%;
+@media (min-width: $mobilexs) and (max-width: $tabla) {
+  .talles {
+    &__fem {
+      flex-flow: column;
+      align-items: center;
     }
-
-    .btn_attach,
-    .btn_send,
-    .btn_del {
-      width: 100%;
-      margin: 1rem 0;
-
-      span {
-        top: -4.6rem;
+    &__masc {
+      flex-flow: column-reverse;
+      align-items: center;
+    }
+    table {
+      th {
+        padding: 0.4rem;
+        font-size: 0.8rem;
+        font-weight: 100;
       }
     }
   }
 }
 
-@media (min-width: ($mobilexs+ 1px)) and (max-width: $tablet) {
-  .presupuesto {
-    padding: 1.5rem;
+  //Presupuesto
+  @media screen and (max-width: $mobilexs) {
+    .presupuesto {
+      padding: 0.5rem;
 
-    .btn_attach {
-      span {
-        top: -4.3rem;
+      input {
+        width: 100%;
+      }
+
+      .btn_attach,
+      .btn_send,
+      .btn_del {
+        width: 100%;
+        margin: 1rem 0;
+
+        span {
+          top: -4.6rem;
+        }
       }
     }
   }
-}
 
-//Contacto
-@media screen and (max-width: $mobile) {
-  .datos {
-    width: 30.5rem;
-  }
+  @media (min-width: ($mobilexs+ 1px)) and (max-width: $tablet) {
+    .presupuesto {
+      padding: 1.5rem;
 
-  .ubicacion {
-    width: auto;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    overflow: hidden;
-  }
-
-  .contacto {
-    width: auto;
-    margin: 1rem;
-    padding: 1rem;
-
-    input,
-    textarea {
-      max-width: 100%;
-    }
-
-    .btn_send2 {
-      width: 100%;
-      margin: 1rem 0;
+      .btn_attach {
+        span {
+          top: -4.3rem;
+        }
+      }
     }
   }
-}
+
+  //Contacto
+  @media screen and (max-width: $mobile) {
+    .datos {
+      width: 30.5rem;
+    }
+
+    .ubicacion {
+      width: auto;
+      padding-top: 20px;
+      padding-bottom: 10px;
+      overflow: hidden;
+    }
+
+    .contacto {
+      width: auto;
+      margin: 1rem;
+      padding: 1rem;
+
+      input,
+      textarea {
+        max-width: 100%;
+      }
+
+      .btn_send2 {
+        width: 100%;
+        margin: 1rem 0;
+      }
+    }
+  }

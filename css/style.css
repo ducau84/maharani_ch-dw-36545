@@ -523,27 +523,81 @@ footer .bi {
 }
 
 /* ------------------------ Tabla de Talles ------------------------ */
-table {
-  margin: 6rem auto;
+.talles {
+  max-width: 940px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  font-family: 'Signika Negative', sans-serif;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+.talles__info, .talles__guia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  padding: 1.5rem;
+}
+
+.talles__info h2,
+.talles__info h3, .talles__guia h2,
+.talles__guia h3 {
+  color: #ff9103;
+}
+
+.talles__info p, .talles__guia p {
+  color: white;
+}
+
+.talles__fem, .talles__masc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.talles__fem__camiseta, .talles__masc__camiseta {
+  width: 100%;
+  height: auto;
+  margin: 1rem;
+}
+
+.talles__fem table, .talles__masc table {
+  margin: 1rem;
   padding: 1rem;
   background-color: white;
   font-size: 1rem;
   text-align: center;
 }
 
-table tr {
+.talles__fem table tr, .talles__masc table tr {
   background-color: #ff9103;
   border: 0.1rem white dashed;
 }
 
-table tr th {
+.talles__fem table tr th, .talles__masc table tr th {
   padding: 0.4rem;
   background: #ff5b33;
   color: white;
   border: 2px solid;
 }
 
-table tr td {
+.talles__fem table tr td, .talles__masc table tr td {
   width: 5rem;
   border: inherit;
 }
@@ -915,7 +969,7 @@ table tr td {
     width: 780px;
     margin: 0 auto;
   }
-  .quienes__texto {
+  .quienes .quienesTexto {
     margin: 0;
     width: 100%;
   }
@@ -935,8 +989,26 @@ table tr td {
   }
 }
 
-@media screen and (max-width: 576px) {
-  table th {
+@media (min-width: 360px) and (max-width: 940px) {
+  .talles__fem {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .talles__masc {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse;
+            flex-flow: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .talles table th {
     padding: 0.4rem;
     font-size: 0.8rem;
     font-weight: 100;

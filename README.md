@@ -5,6 +5,12 @@
 
 ## **Historial del Versiones**:
 
+### Versión 1.80 ( 03/05/2022 )
+- Modificación Total de la sección ***Tabla de Talles***.
+    - Se agregaron imágenes que grafican la toma de medidas de los talles.
+    - Se agregaron instrucciones para la toma de medidas.
+    - Se aplicaron las ***Media Queries*** necesarias para optimizar su visualización.
+
 ### Versión 1.70 ( 29/04/2022 )
 - Creación de la pagina para mostrar en caso que se produzca el **"Error 404"**.
 - Modificación de contenedores de camisetas en secciones ***Galerias***, se le aplico fondo y redondeo de bordes. 
