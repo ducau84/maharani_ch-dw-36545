@@ -64,7 +64,14 @@
 
     ;
   }
-
+  .advertencia {
+    background: $colorFondQS;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+   
+  }
+  
   .btn_send {
     @include btn($colorTxSecundario, $colorTxAzul)
   }

@@ -688,6 +688,13 @@ footer .bi {
   z-index: 0;
 }
 
+.presupuesto .advertencia {
+  background: seashell;
+  border-radius: 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .presupuesto .btn_send {
   display: inline-block;
   width: 25rem;
@@ -848,6 +855,13 @@ footer .bi {
   border-radius: 5px;
 }
 
+.contacto .advertencia {
+  background: seashell;
+  border-radius: 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .contacto .btn_send2 {
   display: inline-block;
   width: 25rem;
@@ -867,7 +881,7 @@ footer .bi {
   border: white 0.2rem solid;
 }
 
-.error {
+.gracias, .error {
   max-width: 800px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -879,16 +893,24 @@ footer .bi {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 2rem;
   margin: 0 auto;
 }
 
-.error img {
-  width: 100%;
+.gracias h3, .error h3 {
+  color: white;
+  text-align: center;
 }
 
-.error .goback h2 {
-  text-align: center;
+.gracias img, .error img {
+  margin: 1rem;
+  width: 80%;
+}
+
+.gracias .goback h4, .error .goback h4 {
   color: white;
 }
 

@@ -101,7 +101,13 @@
     @include formarea (15rem, 1rem);
     
   }
-  
+  .advertencia {
+    background: $colorFondQS;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+   
+  }
   .btn_send2 {
     @include btn($colorTxSecundario, $colorTxPrincipal)
   }

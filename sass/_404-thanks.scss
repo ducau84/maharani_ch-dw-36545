@@ -1,17 +1,23 @@
-.error {
+.gracias, .error {
     max-width: 800px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
+    align-items: center;
     padding: 2rem;
     margin: 0 auto;
 
-    img {
-        width: 100%;
+    h3 {
+    color: $colorTxSecundario;
+    text-align: center;
     }
-    .goback h2 {
-        text-align: center;
+
+    img {
+        margin: 1rem;
+        width: 80%;
+    }
+    .goback h4 {
         color: $colorTxSecundario;
+        
     }
 }
-

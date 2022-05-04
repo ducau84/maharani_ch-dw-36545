@@ -82,45 +82,45 @@
                     <h1>SOLICITUD DE PRESUPUESTO</h1>
                 </section>
                 <section class="presupuesto col-sm-3">
-                    <form name='presupuesto' class="contact_form" id='formulario' method='post'
-                        action='../assets/enviar_email.php' enctype="multipart/form-data">
+                    <form action="https://formsubmit.co/maharaniindumentaria@hotmail.com" method="POST" enctype="multipart/form-data">
+                        <input type="hidden" name="_subject" value="Solicitud de Presupuesto desde la Web">
+                        <input type="hidden" name="_next" value="https://maharaniindumentaria.com.ar/pages/thanks.html">
                         <h3>Por favor completa todos los datos:</h3>
-                        <label for="nombres">Nombres</label>
-                        <input type="text" id="nombres" placeholder="Ingrese su/s Nombre/s" required>
-                        <label for="apellido">Apellido</label>
-                        <input type="text" id="apellido" placeholder="Ingrese su Apellido" required>
-                        <label for="correo">Correo Electrónico</label>
-                        <input type="text" id="correo" placeholder="Ingrese su E-Mail" required>
+                        <label for="name">Nombre y Apellido</label>
+                        <input type="text" id="name" placeholder="Ingrese su/s Nombre/s y Apellido" name="name" required>
+                        <label for="email">Correo Electrónico</label>
+                        <input type="text" id="email" placeholder="Ingrese su E-Mail" name="email" required>
                         <div class="club">
                             <p>¿Representas a un Club o sos Particular?</p>
-                            <input type="radio" name="deporte" id="club" value="1">
-                            <label for="club">Club</label>
-                            <input type="radio" name="deporte" id="part" value="2">
-                            <label for="part">Particular</label>
+                            <input type="radio" name="club" id="tipo_c" value="Club">
+                            <label for="tipo_c">Club</label>
+                            <input type="radio" name="particular" id="tipo_p" value="Particular">
+                            <label for="tipo_p">Particular</label>
                             <br>
                         </div>
                         <div>
                             <p>¿Para qué deporte quiere la indumentaria?</p>
                             <select name="deporte" id="deporte" required>
                                 <option label="Selec. Disciplina"></option>
-                                <option value="1">Futbol</option>
-                                <option value="2">Hockey</option>
-                                <option value="3">Polo</option>
-                                <option value="4">Otras disciplinas</option>
+                                <option id="futblol" value="Futbol">Futbol</option>
+                                <option id="hockey" value="Hockey">Hockey</option>
+                                <option id="polo" value="Polo">Polo</option>
+                                <option id="otras" value="otras">Otras disciplinas</option>
                             </select>
-                            <label for="otras">Otras disciplinas:</label>
-                            <input type="text" id="otras" placeholder="Disciplina...">
+                            <label for="otra">Otras disciplinas:</label>
+                            <input type="text" id="otra" placeholder="Disciplina...">
                         </div>
                         <div>
                             <label for="cantidad">Cantidad</label>
-                            <input type="number" id="cantidad" placeholder="Cantidad" min="1" max="100" required>
+                            <input type="number" id="cantidad" name="cantidad" placeholder="Cantidad" min="1" max="100" required>
                         </div>
                         <p>Adjuntá escudo y publicidades</p>
                         <div class="btn_attach">
-                            <input type="file" name="adjuntar archivos" id="archivo_1">
+                            <input type="file" name="attachment" accept="image/png, image/jpeg, application/pdf">
                             <span>Adjuntar Archivos...</span>
                         </div>
                         <p>Revisa que todos los datos sean correctos antes de enviar!</p>
+                        <p class="advertencia">Luego de presionar enviar, por favor hace click en: <br> <b>"no soy un robot"</b></p>
                         <button type="submit" class="btn_send">Enviar</button>
                         <button type="reset" class="btn_del">Borrar todo</button>
                     </form>

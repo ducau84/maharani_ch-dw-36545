@@ -5,6 +5,11 @@
 
 ## **Historial del Versiones**:
 
+### Versiión 1.90 ( 04/05/2022 )
+- Puesto en funcionamiento los formularios en ***Presupuesto*** y ***Contacto*** conectado a **formsubmit.co** ( https://formsubmit.co/ ).
+    - Modificacación del código de dichos formularios, necesario para su funcionamiento.
+    - Agregado de página ***Thanks*** en la carpeta ***pages*** para agradecer el envío del fomulario.
+
 ### Versión 1.80 ( 03/05/2022 )
 - Modificación Total de la sección ***Tabla de Talles***.
     - Se agregaron imágenes que grafican la toma de medidas de los talles.
@@ -33,7 +38,7 @@
 - Correcciónes del formulario de ***Contacto***.
 
 ### Versión 1.50 ( 22/04/2022 )
-- Optimización del tamaño de las imágenes desde el sitio ***"Optimizilla"*** ( https://imagecompressor.com/es/ ).
+- Optimización del tamaño de las imágenes desde el sitio **"Optimizilla"** ( https://imagecompressor.com/es/ ).
 - Introducción de función ***mixin*** en archivo ***_mixins.scss*** (utilización del mismo en botones de formularios de *Contacto* y *Presupuesto*).
 - Introducción de Mapas y la función each en el archivo ***_maps.scss***:
     - Utilización de ***@each*** en la propiedad hover de los íconos de redes sociales y de WhatsApp del footer.
