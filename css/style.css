@@ -763,7 +763,7 @@ footer .footer__copyRigth p {
 
 .container_datos_contacto .datos {
   width: 25rem;
-  height: auto;
+  height: 100%;
   margin: 1rem 2rem;
   border-radius: 1rem;
   padding: 1rem;
