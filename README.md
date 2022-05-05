@@ -5,7 +5,7 @@
 
 ## **Historial del Versiones**:
 
-### Versión 2.00 ***Versoion FINAL*** ( 05/05/2022 )
+### Versión 2.00 ***Versión FINAL*** ( 05/05/2022 )
 - Modificaciones en las secciones ***Galerías***.
     - Se cambio el tamaño del **Grid** de 3 columnas a 4 para ***Desktop***, 3 para ***Tablet*** y 2 para ***Mobile***.
     - Se agregaron imágenes de camisetas en las 3 categorias ( ***Fútbol - Hockey - Polo*** ).
