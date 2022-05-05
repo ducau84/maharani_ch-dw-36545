@@ -763,7 +763,7 @@ footer .footer__copyRigth p {
 
 .container_datos_contacto .datos {
   width: 25rem;
-  height: 100%;
+  height: auto;
   margin: 1rem 2rem;
   border-radius: 1rem;
   padding: 1rem;
@@ -825,12 +825,12 @@ footer .footer__copyRigth p {
 }
 
 .container_datos_contacto .contacto {
-  max-width: 25rem;
+  width: 25rem;
   height: auto;
   margin: 1rem 2rem;
-  border-radius: 10px;
+  border-radius: 1rem;
   padding: 1rem;
-  background-color: #e9e9e9;
+  background: #e9e9e9;
 }
 
 .container_datos_contacto .contacto h2 {
@@ -1096,7 +1096,7 @@ footer .footer__copyRigth p {
 
 @media screen and (max-width: 576px) {
   .container_datos_contacto .datos {
-    margin: 1rem;
+    margin: 1rem 0;
   }
   .container_datos_contacto .datos a {
     font-size: 1.2rem;
@@ -1110,7 +1110,7 @@ footer .footer__copyRigth p {
     padding-top: 1rem;
   }
   .container_datos_contacto .contacto {
-    margin: 1rem;
+    margin: 1rem 0;
   }
   .container_datos_contacto .contacto input,
   .container_datos_contacto .contacto textarea {
