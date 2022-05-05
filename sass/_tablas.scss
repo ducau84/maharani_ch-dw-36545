@@ -35,6 +35,9 @@
       width: 100%;
       height: auto;
       margin: 1rem;
+      img{
+      filter: grayscale(1);
+    }
     }
 
     table {

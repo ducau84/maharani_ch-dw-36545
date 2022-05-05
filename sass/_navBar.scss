@@ -39,7 +39,9 @@
   .dropdown {
     &-menu {
       background-image: $backgroundNavFoot;
-  
+      background-color: #fff0;
+      border: none;
+
       &.show {
         border-radius: 0;
         animation: desplegar-menu 400ms ease-in-out forwards;

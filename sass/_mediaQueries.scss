@@ -8,16 +8,13 @@
 }
 
 // Pie de página
-@media (min-width: $mobile) and (max-width: $tablet) {
+@media (min-width: $mobile) and (max-width: ($tablet + 43px)) {
   html {
     font-size: 80%;
   }
 
-  body {
-    overflow-x: hidden;
-  }
-
-  .footer .container .row {
+  .footer__info,
+  .footer__copyRight {
     padding: 0;
   }
 }
@@ -27,32 +24,35 @@
     font-size: 75%;
   }
 
-  .container {
-    overflow-x: hidden;
-  }
-
-  .footer .bi {
-    margin: 2rem;
-  }
-
-  .bi-link,
-  .pago,
-  .envio,
-  .telefono {
-    display: none
-  }
-
-  .redes {
-    p {
-      display: none;
+  footer {
+    .bi {
+      margin: 0.5rem;
     }
 
-    font-size: 0;
-    flex-flow: row;
-    width: 100%;
-    height: auto;
+    .footer__info {
+
+      .bi-link,
+      .pago,
+      .envio,
+      .telefono {
+        display: none
+      }
+
+      .redes {
+        p {
+          display: none;
+        }
+
+        margin: 1rem;
+        font-size: 0;
+        flex-flow: row;
+        width: 100%;
+        height: auto;
+      }
+    }
   }
 }
+
 
 // Posicionamiento Boton "volver arriba"
 @media (min-width: $mobile) and (max-width: $desktop) {
@@ -85,12 +85,12 @@
 
 @media (min-width: ($mobile + 1px)) and (max-width: ($tablet + 370px)) {
   .quienes {
-    width: 780px;
     margin: 0 auto;
 
-    .quienesTexto {
+    &__texto {
       margin: 0;
       width: 100%;
+      max-width: ($tablet +9px);
     }
 
     #taller {
@@ -100,10 +100,18 @@
 }
 
 //Galerias
+@media (min-width: ($mobile + 1px)) and (max-width: $tablet) {
+  .galeria {
+    &__container {
+      grid-template-columns: 1fr 1fr 1fr;
+
+    }
+  }
+}
 @media screen and (max-width: $mobile) {
   .galeria {
     &__container {
-      grid-template-columns: auto auto;
+      grid-template-columns: 1fr 1fr;
 
       .camiseta {
         &__desc {
@@ -122,71 +130,75 @@
       flex-flow: column;
       align-items: center;
     }
+
     &__masc {
       flex-flow: column-reverse;
       align-items: center;
     }
+
     table {
-      th {
-        padding: 0.4rem;
-        font-size: 0.8rem;
-        font-weight: 100;
+      margin: 1rem 0;
+    }
+  }
+}
+
+//Presupuesto
+@media screen and (max-width: $mobilexs) {
+  .presupuesto {
+
+    input {
+      width: 100%;
+    }
+
+    .btn_attach,
+    .btn_send,
+    .btn_del {
+      width: 100%;
+      margin: 1rem 0;
+
+      span {
+        top: -4.6rem;
       }
     }
   }
 }
 
-  //Presupuesto
-  @media screen and (max-width: $mobilexs) {
-    .presupuesto {
-      padding: 0.5rem;
+@media (min-width: ($mobilexs+ 1px)) and (max-width: $tablet) {
+  .presupuesto {
+    padding: 1.5rem;
 
-      input {
-        width: 100%;
-      }
-
-      .btn_attach,
-      .btn_send,
-      .btn_del {
-        width: 100%;
-        margin: 1rem 0;
-
-        span {
-          top: -4.6rem;
-        }
+    .btn_attach {
+      span {
+        top: -4.3rem;
       }
     }
   }
+}
 
-  @media (min-width: ($mobilexs+ 1px)) and (max-width: $tablet) {
-    .presupuesto {
-      padding: 1.5rem;
+//Contacto
+@media screen and (max-width: $mobile) {
+  .container_datos_contacto {
 
-      .btn_attach {
-        span {
-          top: -4.3rem;
-        }
-      }
-    }
-  }
-
-  //Contacto
-  @media screen and (max-width: $mobile) {
     .datos {
-      width: 30.5rem;
+      margin: 1rem;
+
+      a {
+        font-size: 1.2rem;
+      }
     }
 
     .ubicacion {
-      width: auto;
-      padding-top: 20px;
-      padding-bottom: 10px;
-      overflow: hidden;
+      padding: 1rem 0;
+
+      #gmap_canvas {
+        max-width: 22rem;
+        max-height: 22rem;
+        padding-top: 1rem;
+      }
     }
 
     .contacto {
-      width: auto;
       margin: 1rem;
-      padding: 1rem;
 
       input,
       textarea {
@@ -199,3 +211,4 @@
       }
     }
   }
+}

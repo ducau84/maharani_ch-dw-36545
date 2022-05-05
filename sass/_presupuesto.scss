@@ -1,11 +1,11 @@
 /* ------------------------ Presupuesto ------------------------ */
 
 .presupuesto {
-  width: 30rem;
+  max-width: 25rem;
   height: auto;
-  margin: 1rem 2rem;
+  margin: 2rem auto;
   border-radius: 10px;
-  padding: 2rem;
+  padding: 2rem 1rem;
   background: map-get($map: $colores_fondo, $key: presupuesto);
 
   h3 {

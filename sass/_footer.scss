@@ -1,20 +1,14 @@
 /* ------------------------ Pie de Página ------------------------  */
 
 footer {
+  display: flex;
+  flex-flow: column wrap;
   background-image: $backgroundNavFoot;
   background-attachment: fixed;
   background-size: cover;
   border-top: $colorTxPrincipal solid 0.1rem;
   color: $colorTxSecundario;
   text-transform: uppercase;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-
-  .row {
-    margin: 1.5rem;
-  }
 
   a {
     color: $colorTxSecundario;
@@ -26,50 +20,57 @@ footer {
     font-size: 0.9rem;
     margin: 0;
   }
-}
 
-.redes {
-  display: flex;
-  flex-flow: column;
-  font-size: 0.7rem;
-}
-
-.mpago {
-  width: 50%;
-  transition: all 333ms;
-
-  &:hover {
-    filter: invert(48%) sepia(90%) saturate(3207%);
-  }
-}
-
-.envio {
-  display: flex;
-  flex-flow: column;
-  font-size: 0.8rem;
-}
-
-footer .bi {
-  font-size: 1.4rem;
-  margin: 0.25rem;
-  color: $colorTxSecundario;
-  transition: all 1s;
-}
-
-.envio a:hover {
-  color: $colorTxPrincipal;
-}
-
-.copyRigth {
-  font-size: 1.2rem;
-  font-weight: 100;
-  text-align: center;
-  text-shadow: $colorSombra;
-
-  p {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  .bi {
+    font-size: 1.4rem;
+    margin: 0.25rem;
     color: $colorTxSecundario;
-    font-size: 0.9rem;
-    text-transform: capitalize;
+  }
+
+  .footer__info {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 1.5rem 0;
+    justify-content: space-evenly;
+
+    .redes {
+      display: flex;
+      flex-flow: column;
+      font-size: 0.7rem;
+    }
+
+    .mpago {
+      width: 50%;
+      transition: all 333ms;
+
+      &:hover {
+        filter: invert(48%) sepia(90%) saturate(3207%);
+      }
+    }
+
+    .envio {
+      display: flex;
+      flex-flow: column;
+      font-size: 0.8rem;
+
+      & a:hover {
+        color: $colorTxPrincipal;
+      }
+    }
+  }
+
+  .footer__copyRigth {
+    margin: 1rem;
+    font-size: 1.2rem;
+    font-weight: 100;
+    text-align: center;
+    text-shadow: $colorSombra;
+
+    p {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: $colorTxSecundario;
+      font-size: 0.9rem;
+      text-transform: capitalize;
+    }
   }
 }

@@ -1,4 +1,5 @@
-.gracias, .error {
+.gracias,
+.error {
     max-width: 800px;
     display: flex;
     flex-flow: column nowrap;
@@ -8,16 +9,17 @@
     margin: 0 auto;
 
     h3 {
-    color: $colorTxSecundario;
-    text-align: center;
+        color: $colorTxSecundario;
+        text-align: center;
     }
 
     img {
         margin: 1rem;
         width: 80%;
     }
+
     .goback h4 {
         color: $colorTxSecundario;
-        
+        text-align: center;
     }
 }

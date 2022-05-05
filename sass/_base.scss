@@ -7,15 +7,21 @@
     list-style: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-image: $backgroundPrincipal;
     margin: 0 auto;
     animation: bgfade 1.5s;
     font-family: 'Kanit', sans-serif;
+
     main {
         max-width: $desktop;
         margin: 0 auto;
         padding: 10px;
+
         .row {
             justify-content: center;
             margin: auto;

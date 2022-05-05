@@ -5,6 +5,16 @@
 
 ## **Historial del Versiones**:
 
+### Versión 1.95 ( 05/05/2022 )
+- Modificaciones en las secciones ***Galerías***.
+    - Se cambio el tamaño del **Grid** de 3 columnas a 4 para ***Desktop***, 3 para ***Tablet*** y 2 para ***Mobile***.
+    - Se agregaron imágenes de camisetas en las 3 categorias ( ***Fútbol - Hockey - Polo*** ).
+    - Cambio de denominación de cada camiseta por el código interno para pedidos y consultas.
+- Cambios en el maquetado de las secciones ***Presupuesto*** y ***Contacto***, se dejó de lado el **Grid System** de **Bootstrap**, a favor de un maquetado a mano con **Flexbox**.
+- Cambios en el maquetado del ***footer***, se dejó de lado el **Grid System** de **Bootstrap**, a favor de un maquetado a mano con **Flexbox**.
+- Correcciones varias en ***Media Queries*** necesarias para la correcta visualización en vistas **tablet** y **mobile** el nuevo maquetado.
+- Introducción del valor: ***"scroll_behavior: smooth***. 
+
 ### Versiión 1.90 ( 04/05/2022 )
 - Puesto en funcionamiento los formularios en ***Presupuesto*** y ***Contacto*** conectado a **formsubmit.co** ( https://formsubmit.co/ ).
     - Modificacación del código de dichos formularios, necesario para su funcionamiento.
