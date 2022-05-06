@@ -79,71 +79,73 @@
         <section class="titulo" data-aos="fade-down">
             <h1>¿Cómo Contactarnos?</h1>
         </section>
-        
-     <!-- datos de contacto -->
-    <div class="container_datos_contacto"> 
-        <section class="datos">
-            <div>
-                <h2>Nuestros Datos</h2>
+
+        <section class="container_datos_contacto">
+            <!-- datos de contacto -->
+            <div class="datos">
+                <div>
+                    <h2>Nuestros Datos</h2>
+                </div>
+                <div>
+                    <h3>Dirección</h3>
+                    <p>Simón Bolívar 637, CP 7540 Coronel Suárez <br> Provincia de Buenos Aires</p>
+                </div>
+                <div>
+                    <h3>Teléfono</h3>
+                    <p>
+                        <a href="tel:+5492926497162">02926 15 497162 </a><a
+                            href="https://api.whatsapp.com/send?phone=5492926497162&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20productos%20!"
+                            target="_blank"><i class="bi bi-whatsapp"></i></a>
+                    </p>
+                </div>
+                <div>
+                    <h3>Correo Electrónico</h3>
+                    <p>
+                        <a
+                            href="mailto:maharaniindumentaria&commat;hotmail&period;com">maharaniindumentaria&commat;hotmail&period;com</a>
+                    </p>
+                </div>
+                <div class="ubicacion">
+                    <h2>¿Dónde Estamos?</h2>
+                    <div class="mapouter"><iframe
+                            src="https://maps.google.com/maps?q=bolivar%20637,%20coronel%20suarez,%20&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+                            id="gmap_canvas"></iframe>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h3>Dirección</h3>
-                <p>Simón Bolívar 637, CP 7540 Coronel Suárez <br> Provincia de Buenos Aires</p>
-            </div>
-            <div>
-                <h3>Teléfono</h3>
-                <p>
-                    <a href="tel:+5492926497162">02926 15 497162 </a><a
-                        href="https://api.whatsapp.com/send?phone=5492926497162&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20productos%20."
-                        target="_blank"><i class="bi bi-whatsapp"></i></a>
-                </p>
-            </div>
-            <div>
-                <h3>Correo Electrónico</h3>
-                <p>
-                    <a
-                        href="mailto:maharaniindumentaria&commat;hotmail&period;com">maharaniindumentaria&commat;hotmail&period;com</a>
-                </p>
-            </div>
-            <div class="ubicacion">
-                <h2>¿Dónde Estamos?</h2>
-                <div class="mapouter"><iframe
-                        src="https://maps.google.com/maps?q=bolivar%20637,%20coronel%20suarez,%20&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
-                        id="gmap_canvas"></iframe>
+
+            <!-- formulario de contacto -->
+
+            <div class="contacto">
+                <div class="formulario">
+                    <h2>Envianos un mensaje</h2>
+                    <h3>Completá tus datos</h3>
+                    <form action="https://formsubmit.co/maharaniindumentaria@hotmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="Consulta desde la Web">
+                        <input type="hidden" name="_next" value="https://maharaniindumentaria.com.ar/pages/thanks.html">
+                        <label for="nombre" class="colocar_nombre">Nombre y Apellido<span
+                                class="obligatorio">*</span></label>
+                        <input type="text" name="name" id="nombre" required placeholder="Escribí tu nombre">
+                        <label for="email" class="colocar_email">Email<span class="obligatorio">*</span></label>
+                        <input type="email" name="email" id="email" required
+                            placeholder="Escribí tu Correo Electrónico">
+                        <label for="telefono" class="colocar_telefono">Teléfono Celular</label>
+                        <input type="tel" name="phone" id="telefono"
+                            placeholder="Código de área sin 0 y teléfono celular sin 15">
+                        <label for="asunto" class="colocar_asunto">Asunto<span class="obligatorio">*</span></label>
+                        <input type="text" name="_subject" id="asunto" required placeholder="Motivo de tu consulta">
+                        <label for="mensaje" class="colocar_mensaje">Mensaje<span class="obligatorio">*</span></label>
+                        <textarea name="message" class="texto_mensaje" id="mensaje" required
+                            placeholder="Deja tu comentario..."></textarea>
+                        <p class="advertencia">Luego de presionar enviar, por favor hace click en: <br> <b>"no soy un
+                                robot"</b></p>
+                        <button type="submit" id="enviar" class="btn_send2">Enviar</button>
+                        <p class="aviso"><span class="obligatorio"> * </span>los campos son obligatorios.</p>
+                    </form>
                 </div>
             </div>
         </section>
-
-        <!-- formulario de contacto -->
-
-        <div class="contacto">
-            <div class="formulario">
-                <h2>Envianos un mensaje</h2>
-                <h3>Completá tus datos</h3>
-                <form action="https://formsubmit.co/maharaniindumentaria@hotmail.com" method="POST">
-                    <input type="hidden" name="_subject" value="Consulta desde la Web">
-                    <input type="hidden" name="_next" value="https://maharaniindumentaria.com.ar/pages/thanks.html">
-                    <label for="nombre" class="colocar_nombre">Nombre y Apellido<span
-                            class="obligatorio">*</span></label>
-                    <input type="text" name="name" id="nombre" required placeholder="Escribí tu nombre">
-                    <label for="email" class="colocar_email">Email<span class="obligatorio">*</span></label>
-                    <input type="email" name="email" id="email" required placeholder="Escribí tu Correo Electrónico">
-                    <label for="telefono" class="colocar_telefono">Teléfono Celular</label>
-                    <input type="tel" name="phone" id="telefono"
-                        placeholder="Código de área sin 0 y teléfono celular sin 15">
-                    <label for="asunto" class="colocar_asunto">Asunto<span class="obligatorio">*</span></label>
-                    <input type="text" name="_subject" id="asunto" required placeholder="Motivo de tu consulta">
-                    <label for="mensaje" class="colocar_mensaje">Mensaje<span class="obligatorio">*</span></label>
-                    <textarea name="message" class="texto_mensaje" id="mensaje" required
-                        placeholder="Deja tu comentario..."></textarea>
-                    <p class="advertencia">Luego de presionar enviar, por favor hace click en: <br> <b>"no soy un
-                            robot"</b></p>
-                    <button type="submit" id="enviar" class="btn_send2">Enviar</button>
-                    <p class="aviso"><span class="obligatorio"> * </span>los campos son obligatorios.</p>
-                </form>
-            </div>
-        </div>
-    </div>
+        
         <!-- botón volver arriba -->
 
         <button type="button" class="btn btn-floating btn-sm" id="btn-back-to-top">
